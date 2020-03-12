@@ -23,12 +23,10 @@ const imageStyle = {
 
 const Footer = () => (
   <div style={footerStyle}>
-    <a href="https://twitter.com/pureheartstu">
+    <a href="https://twitter.com/BfBBCommunity">
       <img style={imageStyle} src ='/twittericon.png'/>
     </a>
-    <a href="https://www.youtube.com/channel/UCRaEesKRlggGBR4gKA9Ag9Q">
-      <img style={imageStyle} src ='/youtubeicon.png'/>
-    </a>
+
   </div>
   
 );
