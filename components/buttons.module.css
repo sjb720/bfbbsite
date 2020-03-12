@@ -1,0 +1,63 @@
+.headerButton {
+    background-color: rgb(70, 70, 70,0);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Jockey One';
+  }
+
+  .headerButton:hover {
+    /*background-color: #AABFFF; 
+    color: black;*/
+    color: #AABFFF;
+    text-shadow: 0 0 10px #AABFFF;
+  }
+
+  .gameButton {
+    background-color: rgb(70, 70, 70, 0); 
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    padding-bottom: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    font-family: 'Jockey One';
+  }
+
+  .gameButton:hover {
+    background-color: #AABFFF;
+    color: black;
+    box-shadow: 0 0 10px #AABFFF;
+    
+  }
+
+  .dlButton {
+    background-color: #42A85B; 
+    border: none;
+    color: white;
+    width: 160px;
+    height: 60px;
+    padding-bottom: 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 28px;
+    margin: 5px;
+    border-radius: 10px;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+    font-family: 'Jockey One';
+  }
+
+  .dlButton:hover {
+    background-color: #5AE87D;
+    
+  }
