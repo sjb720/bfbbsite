@@ -41,17 +41,24 @@ var Index = function Index() {
       lineNumber: 16
     },
     __self: this
-  }, __jsx("div", {
+  }, __jsx("img", {
+    src: "BfBB_Community_Logo.png",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  }), __jsx("div", {
     style: contentBacker,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 20
     },
     __self: this
   }, __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 21
     },
     __self: this
   }, __jsx("iframe", {
@@ -65,7 +72,7 @@ var Index = function Index() {
     scrolling: "no",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 22
     },
     __self: this
   }), __jsx("div", {
@@ -77,7 +84,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 24
     },
     __self: this
   }, __jsx(react_twitter_embed__WEBPACK_IMPORTED_MODULE_3__["TwitterTimelineEmbed"], {
@@ -89,25 +96,25 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 25
     },
     __self: this
   }))), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 32
     },
     __self: this
   }, "Welcome"), __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 33
     },
     __self: this
   }), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 34
     },
     __self: this
   }, "Welcome to the SpongeBob SquarePants: Battle for Bikini Bottom community homepage and resource. This site has a primary focus on speedrunning, but we also provide other resources related to the game. If you are interested in speedrunning, take a look at our ", __jsx("span", {
@@ -116,7 +123,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 37
     },
     __self: this
   }, "Getting Started"), " guide. You may also check out the community stream above."))));
@@ -127,4 +134,4 @@ var Index = function Index() {
 /***/ })
 
 })
-//# sourceMappingURL=index.js.f0032198bfe389d1ab04.hot-update.js.map
+//# sourceMappingURL=index.js.34bf708c60adef1122e3.hot-update.js.map

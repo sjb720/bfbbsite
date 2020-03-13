@@ -1544,7 +1544,9 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_8___default.a {
       __self: this
     })), __jsx("body", {
       style: {
-        backgroundImage: `url('/backgroundBattle.png')`
+        backgroundImage: `url('/backgroundBattle.png')`,
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
       },
       __source: {
         fileName: _jsxFileName,

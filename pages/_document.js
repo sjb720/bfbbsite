@@ -22,7 +22,7 @@ class MyDocument extends Document {
             crossorigin="anonymous"
           />
         </Head>
-        <body style={{backgroundImage: `url('/backgroundBattle.png')`}}>
+        <body style={{backgroundImage: `url('/backgroundBattle.png')`,backgroundRepeat: 'no-repeat',backgroundAttachment: 'fixed'}}>
           <Main />
           <NextScript />
         </body>

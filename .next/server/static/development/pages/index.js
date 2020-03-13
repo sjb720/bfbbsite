@@ -2333,17 +2333,27 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
     lineNumber: 16
   },
   __self: undefined
-}, __jsx("div", {
+}, __jsx("img", {
+  src: "BfBB_Community_Logo.png",
+  style: {
+    width: 300
+  },
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 17
+  },
+  __self: undefined
+}), __jsx("div", {
   style: contentBacker,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 20
   },
   __self: undefined
 }, __jsx("div", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 22
+    lineNumber: 21
   },
   __self: undefined
 }, __jsx("iframe", {
@@ -2357,7 +2367,7 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   scrolling: "no",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 23
+    lineNumber: 22
   },
   __self: undefined
 }), __jsx("div", {
@@ -2369,7 +2379,7 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 25
+    lineNumber: 24
   },
   __self: undefined
 }, __jsx(react_twitter_embed__WEBPACK_IMPORTED_MODULE_3__["TwitterTimelineEmbed"], {
@@ -2381,25 +2391,25 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 26
+    lineNumber: 25
   },
   __self: undefined
 }))), __jsx("h1", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 33
+    lineNumber: 32
   },
   __self: undefined
 }, "Welcome"), __jsx("hr", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34
+    lineNumber: 33
   },
   __self: undefined
 }), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 35
+    lineNumber: 34
   },
   __self: undefined
 }, "Welcome to the SpongeBob SquarePants: Battle for Bikini Bottom community homepage and resource. This site has a primary focus on speedrunning, but we also provide other resources related to the game. If you are interested in speedrunning, take a look at our ", __jsx("span", {
@@ -2408,7 +2418,7 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 38
+    lineNumber: 37
   },
   __self: undefined
 }, "Getting Started"), " guide. You may also check out the community stream above."))));
