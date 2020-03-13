@@ -2317,7 +2317,7 @@ const contentBacker = {
   backgroundColor: 'rgba(11, 23, 82, 0.8)',
   padding: 20,
   marginTop: 20,
-  borderRadius: 10,
+  borderRadius: 5,
   textAlign: "left"
 };
 
@@ -2334,9 +2334,16 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   },
   __self: undefined
 }, __jsx("div", {
+  style: contentBacker,
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 21
+  },
+  __self: undefined
+}, __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 22
   },
   __self: undefined
 }, __jsx("iframe", {
@@ -2350,7 +2357,7 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   scrolling: "no",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 23
   },
   __self: undefined
 }), __jsx("div", {
@@ -2362,7 +2369,7 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 25
   },
   __self: undefined
 }, __jsx(react_twitter_embed__WEBPACK_IMPORTED_MODULE_3__["TwitterTimelineEmbed"], {
@@ -2374,32 +2381,25 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 21
+    lineNumber: 26
   },
   __self: undefined
-}))), __jsx("div", {
-  style: contentBacker,
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 31
-  },
-  __self: undefined
-}, __jsx("h1", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 32
-  },
-  __self: undefined
-}, "Welcome"), __jsx("hr", {
+}))), __jsx("h1", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 33
   },
   __self: undefined
-}), __jsx("p", {
+}, "Welcome"), __jsx("hr", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 34
+  },
+  __self: undefined
+}), __jsx("p", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 35
   },
   __self: undefined
 }, "Welcome to the SpongeBob SquarePants: Battle for Bikini Bottom community homepage and resource. This site has a primary focus on speedrunning, but we also provide other resources related to the game. If you are interested in speedrunning, take a look at our ", __jsx("span", {
@@ -2408,7 +2408,7 @@ const Index = () => __jsx(_components_PageLayout__WEBPACK_IMPORTED_MODULE_1__["d
   },
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 38
   },
   __self: undefined
 }, "Getting Started"), " guide. You may also check out the community stream above."))));

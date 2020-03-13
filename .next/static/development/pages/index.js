@@ -26091,7 +26091,7 @@ var contentBacker = {
   backgroundColor: 'rgba(11, 23, 82, 0.8)',
   padding: 20,
   marginTop: 20,
-  borderRadius: 10,
+  borderRadius: 5,
   textAlign: "left"
 };
 
@@ -26109,9 +26109,16 @@ var Index = function Index() {
     },
     __self: this
   }, __jsx("div", {
+    style: contentBacker,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 17
+      lineNumber: 21
+    },
+    __self: this
+  }, __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
     },
     __self: this
   }, __jsx("iframe", {
@@ -26125,7 +26132,7 @@ var Index = function Index() {
     scrolling: "no",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 23
     },
     __self: this
   }), __jsx("div", {
@@ -26137,7 +26144,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 25
     },
     __self: this
   }, __jsx(react_twitter_embed__WEBPACK_IMPORTED_MODULE_3__["TwitterTimelineEmbed"], {
@@ -26149,32 +26156,25 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 26
     },
     __self: this
-  }))), __jsx("div", {
-    style: contentBacker,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 31
-    },
-    __self: this
-  }, __jsx("h1", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }, "Welcome"), __jsx("hr", {
+  }))), __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 33
     },
     __self: this
-  }), __jsx("p", {
+  }, "Welcome"), __jsx("hr", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 34
+    },
+    __self: this
+  }), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
     },
     __self: this
   }, "Welcome to the SpongeBob SquarePants: Battle for Bikini Bottom community homepage and resource. This site has a primary focus on speedrunning, but we also provide other resources related to the game. If you are interested in speedrunning, take a look at our ", __jsx("span", {
@@ -26183,7 +26183,7 @@ var Index = function Index() {
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, "Getting Started"), " guide. You may also check out the community stream above."))));

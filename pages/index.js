@@ -7,14 +7,19 @@ const contentBacker = {
   backgroundColor:'rgba(11, 23, 82, 0.8)',
   padding: 20,
   marginTop: 20,
-  borderRadius:10,
+  borderRadius:5,
   textAlign:"left"
 }
 
 const Index = () => (
   <Layout>
     <div>
-      <div>
+      
+        
+
+
+        <div style={contentBacker}>
+        <div>
       <iframe style={{height: "34vw",width:"100%"}}src="https://player.twitch.tv/?channel=bfbbcommunity"  frameborder="0" allowfullscreen="true" scrolling="no"></iframe>
           {/* This is our twitter */}
           <div class="twitterfeed" style={{top:70,right:20,position:"fixed"}}>
@@ -25,10 +30,6 @@ const Index = () => (
             />
           </div>
       </div>
-        
-
-
-        <div style={contentBacker}>
             <h1>Welcome</h1>
             <hr></hr>
             <p>
