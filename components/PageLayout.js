@@ -64,7 +64,7 @@ const Layout = props => (
           text-align: left;
         }
 
-        @media all and (max-width: 1200px) {
+        @media all and (max-width: 1500px) {
           .twitterfeed { display: none; }
         }
 

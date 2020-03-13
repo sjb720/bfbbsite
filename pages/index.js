@@ -34,7 +34,7 @@ const Index = () => (
             <p>
             Welcome to the SpongeBob SquarePants: Battle for Bikini Bottom community homepage and resource. 
             This site has a primary focus on speedrunning, but we also provide other resources related to the
-             game. If you are interested in speedrunning, take a look at our Getting Started guide. You may
+             game. If you are interested in speedrunning, take a look at our <span style={{color:"#ff00ff"}}>Getting Started</span> guide. You may
               also check out the community stream above.
             </p>
 

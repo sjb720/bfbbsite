@@ -48,7 +48,7 @@ var Footer = function Footer() {
     },
     __self: this
   }, __jsx("a", {
-    href: "https://twitter.com/pureheartstu",
+    href: "https://twitter.com/BfBBCommunity",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -60,21 +60,6 @@ var Footer = function Footer() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 27
-    },
-    __self: this
-  })), __jsx("a", {
-    href: "https://www.youtube.com/channel/UCRaEesKRlggGBR4gKA9Ag9Q",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 29
-    },
-    __self: this
-  }, __jsx("img", {
-    style: imageStyle,
-    src: "/youtubeicon.png",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 30
     },
     __self: this
   })));
@@ -322,7 +307,7 @@ var contentContainer = {
 var Layout = function Layout(props) {
   return __jsx("div", {
     style: pageContainer,
-    className: "jsx-610980809",
+    className: "jsx-3606845971",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 23
@@ -336,7 +321,7 @@ var Layout = function Layout(props) {
     __self: this
   }), __jsx("div", {
     style: contentContainer,
-    className: "jsx-610980809",
+    className: "jsx-3606845971",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
@@ -344,7 +329,7 @@ var Layout = function Layout(props) {
     __self: this
   }, __jsx("div", {
     style: pageStyleModern,
-    className: "jsx-610980809",
+    className: "jsx-3606845971",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
@@ -359,10 +344,10 @@ var Layout = function Layout(props) {
   }), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
     id: "3951059393",
     __self: this
-  }, ".jsx-610980809::-webkit-scrollbar{width:10px;}.jsx-610980809::-webkit-scrollbar-track{background:#000;}.jsx-610980809::-webkit-scrollbar-thumb{background:#fff;}.jsx-610980809::-webkit-scrollbar-thumb:hover{background:#aabfff;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3N0ZXBoZW4vRGVza3RvcC9MZWFybkJhdHRsZS9jb21wb25lbnRzL1BhZ2VMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBK0JnQixBQUdzQixBQUtLLEFBS0EsQUFLRyxXQWRyQixLQUtBLEFBS0EsR0FLQSIsImZpbGUiOiIvaG9tZS9zdGVwaGVuL0Rlc2t0b3AvTGVhcm5CYXR0bGUvY29tcG9uZW50cy9QYWdlTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgRm9vdGVyIGZyb20gJy4vRm9vdGVyJztcblxuY29uc3QgcGFnZUNvbnRhaW5lciA9IHtcbiAgY29sb3I6ICcjZmZmJyxcbiAgcG9zaXRpb246ICdyZWxhdGl2ZScsXG4gIG1pbkhlaWdodDogJzEwMHZoJyxcbn07XG5cbmNvbnN0IHBhZ2VTdHlsZU1vZGVybiA9IHtcbiAgZm9udFNpemU6ICcyMHB4JyxcbiAgZm9udEZhbWlseTogJ0xhdG8nLFxuICBwYWRkaW5nOicyMHB4IDIwJScsXG4gIHBhZGRpbmdUb3A6JzcwcHgnLFxufTtcblxuY29uc3QgY29udGVudENvbnRhaW5lciA9IHtcbiAgcG9zaXRpb246ICdyZWxhdGl2ZScsXG4gIHBhZGRpbmdCb3R0b206ICc1MHB4Jyxcbn07XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IChcbiAgPGRpdiBzdHlsZT17cGFnZUNvbnRhaW5lcn0+XG4gICAgPEhlYWRlciAvPlxuICAgIDxkaXYgc3R5bGU9e2NvbnRlbnRDb250YWluZXJ9PlxuICAgICAgPGRpdiBzdHlsZT17cGFnZVN0eWxlTW9kZXJufT5cbiAgICAgICAge3Byb3BzLmNoaWxkcmVufVxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPEZvb3RlciAvPlxuXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgICAgICB3aWR0aDogMTBweDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLyogVHJhY2sgKi9cbiAgICAgICAgOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XG4gICAgICAgICAgYmFja2dyb3VuZDogIzAwMDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLyogSGFuZGxlICovXG4gICAgICAgIDo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWIge1xuICAgICAgICAgIGJhY2tncm91bmQ6ICNmZmY7XG4gICAgICAgIH1cbiAgICAgICAgXG4gICAgICAgIC8qIEhhbmRsZSBvbiBob3ZlciAqL1xuICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiAjYWFiZmZmO1xuICAgICAgICB9XG5cbiAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntcbiAgICAgICAgYGh0bWwsIGJvZHksIGRpdiB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIH1cblxuICAgICAgICBoMiwgaDN7XG4gICAgICAgICAgY29sb3I6I2FhYmZmZjtcbiAgICAgICAgfVxuXG4gICAgICAgIHB7XG4gICAgICAgICAgdGV4dC1hbGlnbjogbGVmdDtcbiAgICAgICAgfVxuXG4gICAgICAgIEBtZWRpYSBhbGwgYW5kIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICAgICAgICAgIC50d2l0dGVyZmVlZCB7IGRpc3BsYXk6IG5vbmU7IH1cbiAgICAgICAgfVxuXG4gICAgICAgIGBcbiAgICAgIH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDsiXX0= */\n/*@ sourceURL=/home/stephen/Desktop/LearnBattle/components/PageLayout.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
-    id: "904889089",
+  }, ".jsx-3606845971::-webkit-scrollbar{width:10px;}.jsx-3606845971::-webkit-scrollbar-track{background:#000;}.jsx-3606845971::-webkit-scrollbar-thumb{background:#fff;}.jsx-3606845971::-webkit-scrollbar-thumb:hover{background:#aabfff;}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3N0ZXBoZW4vRGVza3RvcC9MZWFybkJhdHRsZS9jb21wb25lbnRzL1BhZ2VMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBK0JnQixBQUdzQixBQUtLLEFBS0EsQUFLRyxXQWRyQixLQUtBLEFBS0EsR0FLQSIsImZpbGUiOiIvaG9tZS9zdGVwaGVuL0Rlc2t0b3AvTGVhcm5CYXR0bGUvY29tcG9uZW50cy9QYWdlTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgRm9vdGVyIGZyb20gJy4vRm9vdGVyJztcblxuY29uc3QgcGFnZUNvbnRhaW5lciA9IHtcbiAgY29sb3I6ICcjZmZmJyxcbiAgcG9zaXRpb246ICdyZWxhdGl2ZScsXG4gIG1pbkhlaWdodDogJzEwMHZoJyxcbn07XG5cbmNvbnN0IHBhZ2VTdHlsZU1vZGVybiA9IHtcbiAgZm9udFNpemU6ICcyMHB4JyxcbiAgZm9udEZhbWlseTogJ0xhdG8nLFxuICBwYWRkaW5nOicyMHB4IDIwJScsXG4gIHBhZGRpbmdUb3A6JzcwcHgnLFxufTtcblxuY29uc3QgY29udGVudENvbnRhaW5lciA9IHtcbiAgcG9zaXRpb246ICdyZWxhdGl2ZScsXG4gIHBhZGRpbmdCb3R0b206ICc1MHB4Jyxcbn07XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IChcbiAgPGRpdiBzdHlsZT17cGFnZUNvbnRhaW5lcn0+XG4gICAgPEhlYWRlciAvPlxuICAgIDxkaXYgc3R5bGU9e2NvbnRlbnRDb250YWluZXJ9PlxuICAgICAgPGRpdiBzdHlsZT17cGFnZVN0eWxlTW9kZXJufT5cbiAgICAgICAge3Byb3BzLmNoaWxkcmVufVxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPEZvb3RlciAvPlxuXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgICAgICB3aWR0aDogMTBweDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLyogVHJhY2sgKi9cbiAgICAgICAgOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XG4gICAgICAgICAgYmFja2dyb3VuZDogIzAwMDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLyogSGFuZGxlICovXG4gICAgICAgIDo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWIge1xuICAgICAgICAgIGJhY2tncm91bmQ6ICNmZmY7XG4gICAgICAgIH1cbiAgICAgICAgXG4gICAgICAgIC8qIEhhbmRsZSBvbiBob3ZlciAqL1xuICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiAjYWFiZmZmO1xuICAgICAgICB9XG5cbiAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntcbiAgICAgICAgYGh0bWwsIGJvZHksIGRpdiB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIH1cblxuICAgICAgICBoMiwgaDN7XG4gICAgICAgICAgY29sb3I6I2FhYmZmZjtcbiAgICAgICAgfVxuXG4gICAgICAgIHB7XG4gICAgICAgICAgdGV4dC1hbGlnbjogbGVmdDtcbiAgICAgICAgfVxuXG4gICAgICAgIEBtZWRpYSBhbGwgYW5kIChtYXgtd2lkdGg6IDE1MDBweCkge1xuICAgICAgICAgIC50d2l0dGVyZmVlZCB7IGRpc3BsYXk6IG5vbmU7IH1cbiAgICAgICAgfVxuXG4gICAgICAgIGBcbiAgICAgIH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDsiXX0= */\n/*@ sourceURL=/home/stephen/Desktop/LearnBattle/components/PageLayout.js */"), __jsx(styled_jsx_style__WEBPACK_IMPORTED_MODULE_0___default.a, {
+    id: "3379274139",
     __self: this
-  }, "html,body,div{margin:0;padding:0;}h2,h3{color:#aabfff;}p{text-align:left;}@media all and (max-width:1200px){.twitterfeed{display:none;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3N0ZXBoZW4vRGVza3RvcC9MZWFybkJhdHRsZS9jb21wb25lbnRzL1BhZ2VMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcURRLEFBRW9CLEFBS0ksQUFJRyxBQUlXLFNBWmpCLElBWWtCLENBUDlCLEVBSUEsR0FSQSIsImZpbGUiOiIvaG9tZS9zdGVwaGVuL0Rlc2t0b3AvTGVhcm5CYXR0bGUvY29tcG9uZW50cy9QYWdlTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgRm9vdGVyIGZyb20gJy4vRm9vdGVyJztcblxuY29uc3QgcGFnZUNvbnRhaW5lciA9IHtcbiAgY29sb3I6ICcjZmZmJyxcbiAgcG9zaXRpb246ICdyZWxhdGl2ZScsXG4gIG1pbkhlaWdodDogJzEwMHZoJyxcbn07XG5cbmNvbnN0IHBhZ2VTdHlsZU1vZGVybiA9IHtcbiAgZm9udFNpemU6ICcyMHB4JyxcbiAgZm9udEZhbWlseTogJ0xhdG8nLFxuICBwYWRkaW5nOicyMHB4IDIwJScsXG4gIHBhZGRpbmdUb3A6JzcwcHgnLFxufTtcblxuY29uc3QgY29udGVudENvbnRhaW5lciA9IHtcbiAgcG9zaXRpb246ICdyZWxhdGl2ZScsXG4gIHBhZGRpbmdCb3R0b206ICc1MHB4Jyxcbn07XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IChcbiAgPGRpdiBzdHlsZT17cGFnZUNvbnRhaW5lcn0+XG4gICAgPEhlYWRlciAvPlxuICAgIDxkaXYgc3R5bGU9e2NvbnRlbnRDb250YWluZXJ9PlxuICAgICAgPGRpdiBzdHlsZT17cGFnZVN0eWxlTW9kZXJufT5cbiAgICAgICAge3Byb3BzLmNoaWxkcmVufVxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPEZvb3RlciAvPlxuXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgICAgICB3aWR0aDogMTBweDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLyogVHJhY2sgKi9cbiAgICAgICAgOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XG4gICAgICAgICAgYmFja2dyb3VuZDogIzAwMDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLyogSGFuZGxlICovXG4gICAgICAgIDo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWIge1xuICAgICAgICAgIGJhY2tncm91bmQ6ICNmZmY7XG4gICAgICAgIH1cbiAgICAgICAgXG4gICAgICAgIC8qIEhhbmRsZSBvbiBob3ZlciAqL1xuICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiAjYWFiZmZmO1xuICAgICAgICB9XG5cbiAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntcbiAgICAgICAgYGh0bWwsIGJvZHksIGRpdiB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIH1cblxuICAgICAgICBoMiwgaDN7XG4gICAgICAgICAgY29sb3I6I2FhYmZmZjtcbiAgICAgICAgfVxuXG4gICAgICAgIHB7XG4gICAgICAgICAgdGV4dC1hbGlnbjogbGVmdDtcbiAgICAgICAgfVxuXG4gICAgICAgIEBtZWRpYSBhbGwgYW5kIChtYXgtd2lkdGg6IDEyMDBweCkge1xuICAgICAgICAgIC50d2l0dGVyZmVlZCB7IGRpc3BsYXk6IG5vbmU7IH1cbiAgICAgICAgfVxuXG4gICAgICAgIGBcbiAgICAgIH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDsiXX0= */\n/*@ sourceURL=/home/stephen/Desktop/LearnBattle/components/PageLayout.js */"));
+  }, "html,body,div{margin:0;padding:0;}h2,h3{color:#aabfff;}p{text-align:left;}@media all and (max-width:1500px){.twitterfeed{display:none;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9ob21lL3N0ZXBoZW4vRGVza3RvcC9MZWFybkJhdHRsZS9jb21wb25lbnRzL1BhZ2VMYXlvdXQuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBcURRLEFBRW9CLEFBS0ksQUFJRyxBQUlXLFNBWmpCLElBWWtCLENBUDlCLEVBSUEsR0FSQSIsImZpbGUiOiIvaG9tZS9zdGVwaGVuL0Rlc2t0b3AvTGVhcm5CYXR0bGUvY29tcG9uZW50cy9QYWdlTGF5b3V0LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IEhlYWRlciBmcm9tICcuL0hlYWRlcic7XG5pbXBvcnQgRm9vdGVyIGZyb20gJy4vRm9vdGVyJztcblxuY29uc3QgcGFnZUNvbnRhaW5lciA9IHtcbiAgY29sb3I6ICcjZmZmJyxcbiAgcG9zaXRpb246ICdyZWxhdGl2ZScsXG4gIG1pbkhlaWdodDogJzEwMHZoJyxcbn07XG5cbmNvbnN0IHBhZ2VTdHlsZU1vZGVybiA9IHtcbiAgZm9udFNpemU6ICcyMHB4JyxcbiAgZm9udEZhbWlseTogJ0xhdG8nLFxuICBwYWRkaW5nOicyMHB4IDIwJScsXG4gIHBhZGRpbmdUb3A6JzcwcHgnLFxufTtcblxuY29uc3QgY29udGVudENvbnRhaW5lciA9IHtcbiAgcG9zaXRpb246ICdyZWxhdGl2ZScsXG4gIHBhZGRpbmdCb3R0b206ICc1MHB4Jyxcbn07XG5cbmNvbnN0IExheW91dCA9IHByb3BzID0+IChcbiAgPGRpdiBzdHlsZT17cGFnZUNvbnRhaW5lcn0+XG4gICAgPEhlYWRlciAvPlxuICAgIDxkaXYgc3R5bGU9e2NvbnRlbnRDb250YWluZXJ9PlxuICAgICAgPGRpdiBzdHlsZT17cGFnZVN0eWxlTW9kZXJufT5cbiAgICAgICAge3Byb3BzLmNoaWxkcmVufVxuICAgICAgPC9kaXY+XG4gICAgPC9kaXY+XG4gICAgPEZvb3RlciAvPlxuXG4gICAgPHN0eWxlIGpzeD57YFxuICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyIHtcbiAgICAgICAgICB3aWR0aDogMTBweDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLyogVHJhY2sgKi9cbiAgICAgICAgOjotd2Via2l0LXNjcm9sbGJhci10cmFjayB7XG4gICAgICAgICAgYmFja2dyb3VuZDogIzAwMDtcbiAgICAgICAgfVxuICAgICAgICBcbiAgICAgICAgLyogSGFuZGxlICovXG4gICAgICAgIDo6LXdlYmtpdC1zY3JvbGxiYXItdGh1bWIge1xuICAgICAgICAgIGJhY2tncm91bmQ6ICNmZmY7XG4gICAgICAgIH1cbiAgICAgICAgXG4gICAgICAgIC8qIEhhbmRsZSBvbiBob3ZlciAqL1xuICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyLXRodW1iOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiAjYWFiZmZmO1xuICAgICAgICB9XG5cbiAgICAgIGB9PC9zdHlsZT5cbiAgICAgIDxzdHlsZSBqc3ggZ2xvYmFsPntcbiAgICAgICAgYGh0bWwsIGJvZHksIGRpdiB7XG4gICAgICAgICAgbWFyZ2luOiAwO1xuICAgICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIH1cblxuICAgICAgICBoMiwgaDN7XG4gICAgICAgICAgY29sb3I6I2FhYmZmZjtcbiAgICAgICAgfVxuXG4gICAgICAgIHB7XG4gICAgICAgICAgdGV4dC1hbGlnbjogbGVmdDtcbiAgICAgICAgfVxuXG4gICAgICAgIEBtZWRpYSBhbGwgYW5kIChtYXgtd2lkdGg6IDE1MDBweCkge1xuICAgICAgICAgIC50d2l0dGVyZmVlZCB7IGRpc3BsYXk6IG5vbmU7IH1cbiAgICAgICAgfVxuXG4gICAgICAgIGBcbiAgICAgIH08L3N0eWxlPlxuICA8L2Rpdj5cbik7XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dDsiXX0= */\n/*@ sourceURL=/home/stephen/Desktop/LearnBattle/components/PageLayout.js */"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Layout);
@@ -26192,14 +26177,23 @@ var Index = function Index() {
       lineNumber: 34
     },
     __self: this
-  }, "Welcome to the SpongeBob SquarePants: Battle for Bikini Bottom community homepage and resource. This site has a primary focus on speedrunning, but we also provide other resources related to the game. If you are interested in speedrunning, take a look at our Getting Started guide. You may also check out the community stream above."))));
+  }, "Welcome to the SpongeBob SquarePants: Battle for Bikini Bottom community homepage and resource. This site has a primary focus on speedrunning, but we also provide other resources related to the game. If you are interested in speedrunning, take a look at our ", __jsx("span", {
+    style: {
+      color: "#ff00ff"
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, "Getting Started"), " guide. You may also check out the community stream above."))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 
 /***/ }),
 
-/***/ 1:
+/***/ 0:
 /*!*****************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2Fhome%2Fstephen%2FDesktop%2FLearnBattle%2Fpages%2Findex.js ***!
   \*****************************************************************************************************************************/
@@ -26222,5 +26216,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map
