@@ -1,47 +1,53 @@
-import Link from 'next/link';
-import { headerButton } from './buttons.module.css'
+import SocialMediaButton from '../components/SocialMediaButton';
 import { Button, Navbar, Nav, NavItem, Form, FormControl, NavDropdown, MenuItem } from 'react-bootstrap'
-
-const headerStyle = {
-  textAlign:'center',
-  left: 0,
-  right: 0,
-  backgroundColor: 'rgba(11, 23, 82, 0.8)',
-  padding: 4,
-};
-
-const linkStyle = {
-  marginRight: 1
-};
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const Header = () => (
-  <Navbar bg="dark" variant="dark" expand="lg" style={{position:"fixed",top:0,zIndex:5,width:'100%'}}>
-  <Navbar.Brand href="/">BfBB</Navbar.Brand>
-  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-  <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="/">Home</Nav.Link>
-      <NavDropdown title="Speedrunning" id="basic-nav-dropdown">
-        <NavDropdown.Item href="/">Levels</NavDropdown.Item>
-        <NavDropdown.Item href="/">Tutorials</NavDropdown.Item>
-        <NavDropdown.Item href="/">Strats</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="https://speedrun.com/bfbb">Leaderboards</NavDropdown.Item>
-      </NavDropdown>
-      <Nav.Link href="https://discord.gg/8BKC3US">Discord</Nav.Link>
-      <Nav.Link href="https://twitter.com/bfbbcommunity">Twitter</Nav.Link>
-      <Nav.Link href="https://www.twitch.tv/directory/game/SpongeBob%20SquarePants%3A%20Battle%20for%20Bikini%20Bottom">Streams</Nav.Link>
-      <Nav.Link href="/">Modding</Nav.Link>
-      <Nav.Link href="/">Randomizer</Nav.Link>
-      <Nav.Link href="/">Bingo</Nav.Link>
-      
-    </Nav>
-    <Form inline>
-      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-      <Button variant="outline-success">Search</Button>
-    </Form>
-  </Navbar.Collapse>
-</Navbar>
+  <Navbar className="color-nav" variant="dark" expand="lg" style={{ paddingLeft: '10vw', paddingRight: '10vw' }}>
+    <Navbar.Brand href="/">
+      <div class="animate__animated animate__fadeIn">
+      <img
+          alt=""
+          src="/logo_256.png"
+          width="40"
+          height="40"
+          className="d-inline-block align-top"
+        />{' '}
+      </div>
+
+
+
+    </Navbar.Brand>
+    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar.Collapse id="basic-navbar-nav" style={{ fontWeight: "bold" }}>
+      <Nav className="mr-auto">
+      <NavDropdown title="Projects" id="basic-nav-dropdown" style={{zIndex:9999}}>
+          <NavDropdown.Item href="/bfbb-history">
+            How Speedrunning Revived BfBB
+          </NavDropdown.Item>
+        </NavDropdown>
+        <Nav.Link href="https://www.ownaj.com/pages/shift">Merch</Nav.Link>
+      </Nav>
+      <Nav>
+        <div>
+        <SocialMediaButton image="/twitter.png" link="https://twitter.com/shiftposting" />
+        <SocialMediaButton image="/speedrun.png" link="https://www.speedrun.com/user/SHiFT" />
+        <SocialMediaButton image="/youtube.png" link="https://www.youtube.com/channel/UC9Y0uUKJ5y78QbhHbntAyFQ" />
+        <SocialMediaButton image="/twitch.png" link="https://twitch.tv/shift" />
+        </div>
+        
+      </Nav>
+    </Navbar.Collapse>
+
+    <style>
+      {`
+        .color-nav {
+          background-color: rgb(111, 65, 156);
+        }
+      `}
+    </style>
+
+  </Navbar>
 );
 
 export default Header;

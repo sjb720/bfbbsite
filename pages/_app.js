@@ -1,20 +1,24 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import App from 'next/app';
+import setImmediate from 'setimmediate';
 
-function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
-  }
-  
+class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for
   // every single page in your application. This disables the ability to
   // perform automatic static optimization, causing every page in your app to
   // be server-side rendered.
   //
-  // MyApp.getInitialProps = async (appContext) => {
+  // static async getInitialProps(appContext) {
   //   // calls page's `getInitialProps` and fills `appProps.pageProps`
   //   const appProps = await App.getInitialProps(appContext);
   //
   //   return { ...appProps }
   // }
-  
-  export default MyApp
-  
+
+  render() {
+    const { Component, pageProps } = this.props;
+    return <Component {...pageProps} />;
+  }
+}
+
+export default MyApp;
