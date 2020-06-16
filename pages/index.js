@@ -19,7 +19,7 @@ export default class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      url: "https://player.twitch.tv/shift",
+      url: "twitch.tv/shift",
       playing: true,
       videos: []
     }
@@ -43,7 +43,7 @@ export default class Index extends React.Component {
   }
 
   handleEnded = () => {
-    this.load("https://twitch.tv/shift")
+    this.load("twitch.tv/shift")
   }
 
   load = url => {
@@ -86,16 +86,27 @@ export default class Index extends React.Component {
             </div>
             <div class="column" style={{ width: "20%" }}>
               <ScrollAnimation animateIn="fadeInRight" animateOnce="true" offset="50" delay="500">
-                <TwitchChat channel="shift" width="100%" height='600px' theme="dark" parent={['localhost','shift-one.vercel.app']} style={{ border: 0 }} />
+                <TwitchChat channel="shift" width="100%" height='600px' theme="dark" parent={['localhost', 'shift-one.vercel.app']} style={{ border: 0 }} />
               </ScrollAnimation>
             </div>
           </div>
         </div>
 
-        <div style={{ width: '100%', paddingLeft: 40, paddingRight: 40, paddingTop:20 }} >
-          <h3 style={{ color: "white" }}>
-            Catch the latest:
-          </h3>
+        <div style={{ width: '100%', paddingLeft: 40, paddingRight: 20, paddingTop: 20 }} >
+          <div style={{marginBottom:30, paddingRight:'20%'}} >
+            <h3 style={{ color: "white", display:"inline-block"}}>
+              Catch the latest:
+             </h3>
+             {this.state.url != "twitch.tv/shift" &&
+
+<Button style={{float:"right"}} onClick={() => this.changeVideo("twitch.tv/shift")}>
+             Back to Twitch
+         </Button>
+             }
+             
+            
+          </div>
+
           <Row style={{ width: '100%' }}>
             {this.state.videos.map(vid =>
               <Col style={{ padding: 0, textAlign: 'center' }}>
