@@ -25,6 +25,7 @@
     "react-twitch-embed": "^2.0.0",
     "react-twitter-embed": "^3.0.3",
     "setimmediate": "^1.0.5",
+    "twitch-embed": "^1.1.4",
     "vercel": "^19.1.1",
     "youtube-playlist": "^1.0.3"
   }
