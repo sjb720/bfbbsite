@@ -86,7 +86,7 @@ export default class Index extends React.Component {
             </div>
             <div class="column" style={{ width: "20%" }}>
               <ScrollAnimation animateIn="fadeInRight" animateOnce="true" offset="50" delay="500">
-                <TwitchChat channel="shift" width="100%" height='600px' theme="dark" parent={['localhost']} style={{ border: 0 }} />
+                <TwitchChat channel="shift" width="100%" height='600px' theme="dark" parent={['localhost','https://shift-one.vercel.app/']} style={{ border: 0 }} />
               </ScrollAnimation>
             </div>
           </div>
