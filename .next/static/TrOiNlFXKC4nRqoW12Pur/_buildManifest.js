@@ -1,0 +1,1 @@
+self.__BUILD_MANIFEST = (function(a){return {"/":[a],"/bfbb-history":[a],"/index":[a]}}("static\u002Fchunks\u002F597f6f587380d8b027aff696fadf6a2f9f2ba462.f7b7c836e98bfddab0d9.js"));self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()

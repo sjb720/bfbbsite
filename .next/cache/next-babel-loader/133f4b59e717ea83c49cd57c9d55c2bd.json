@@ -1,0 +1,1 @@
+{"ast":null,"code":"import axios from 'axios';\nconst KEY = 'AIzaSyB_Viw1L-bRdhRKizRpIyEvud4RWU2zsWs';\nexport default axios.create({\n  baseURL: 'https://www.googleapis.com/youtube/v3/',\n  params: {\n    part: 'snippet',\n    maxResults: 5,\n    key: KEY\n  }\n});","map":null,"metadata":{},"sourceType":"module"}
