@@ -60,7 +60,7 @@ export default class Index extends React.Component {
 
           <div class="row" style={{ height: 600 }}>
             <div class="column" style={{ width: "15%" }}>
-              <ScrollAnimation animateIn="fadeInLeft" animateOnce="true" offset="50" delay="500">
+              <ScrollAnimation animateIn="fadeInLeft" animateOnce="true" offset='50' delay="500">
                 <TwitterTimelineEmbed
                   sourceType="profile"
                   screenName="shiftposting"
