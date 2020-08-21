@@ -1,7 +1,7 @@
 {
-  "name": "Shift",
+  "name": "CRASH",
   "version": "1.0.0",
-  "description": "Website for Shift",
+  "description": "CRASH app",
   "main": "index.js",
   "scripts": {
     "dev": "next",
@@ -15,11 +15,13 @@
     "animate.css": "^4.1.0",
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
+    "http-proxy-middleware": "^1.0.5",
     "next": "^9.4.4",
     "react": "^16.13.1",
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-map-gl": "^5.2.7",
     "react-player": "^2.2.0",
     "react-scroll": "^1.7.16",
     "react-twitch-embed": "^2.0.0",
@@ -28,5 +30,6 @@
     "twitch-embed": "^1.1.4",
     "vercel": "^19.1.1",
     "youtube-playlist": "^1.0.3"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
