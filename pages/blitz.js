@@ -3,7 +3,7 @@ import axios from 'axios';
 import BlitzBoard from '../components/BlitzBoard.js'
 import { Button, InputGroup, FormControl, Container, Col, Row, Alert, Accordion, Card } from 'react-bootstrap'
 
-const BACKEND_IP = "https://crash-backend.herokuapp.com";
+const BACKEND_IP = "https://bfbbhub.herokuapp.com";
 const POLLING_RATE_MILLI_SECONDS = 1000;
 
 export default class Index extends React.Component {
