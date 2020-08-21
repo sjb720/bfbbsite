@@ -1,6 +1,6 @@
 import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 
-const BACKEND_IP = "http://172.16.127.245:3001";
+const BACKEND_IP = "https://crash-backend.herokuapp.com";
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip-2" {...props}>
