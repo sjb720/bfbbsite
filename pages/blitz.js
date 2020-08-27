@@ -4,6 +4,8 @@ import BlitzBoard from '../components/BlitzBoard.js'
 import { Button, InputGroup, FormControl, Container, Col, Row, Alert, Accordion, Card } from 'react-bootstrap'
 
 const BACKEND_IP = "https://bfbbhub.herokuapp.com";
+//const BACKEND_IP = "http://172.16.127.245:3001";
+
 const POLLING_RATE_MILLI_SECONDS = 1000;
 
 export default class Index extends React.Component {
@@ -92,6 +94,7 @@ export default class Index extends React.Component {
 
         {this.state.room == null &&
           <Container>
+            <title>BfBB Blitz</title>
             <h1 style={{textAlign:"center", paddingTop:100,paddingBottom:100}}>
               Welcome to BfBB Blitz!
             </h1>
@@ -203,6 +206,7 @@ export default class Index extends React.Component {
           </Container>}
         {this.state.room != null &&
           <div>
+            <title>BfBB Blitz: Room {this.state.room.id}</title>
             <Alert variant="primary">
               {this.state.room.players.length}/8 players. Invite more with: <b>{this.state.room.id}</b>
             </Alert>

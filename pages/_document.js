@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="/static/favicon.png" />
+          <link rel="shortcut icon" href="/spat-icon.png" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
 
           <link rel='icon' href='favicon.ico' type='image/x-icon' />
