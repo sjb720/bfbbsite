@@ -49,8 +49,6 @@ const BlitzBoard = (props) => (
                 </div>
             </Col>
         </Row>
-
-
     </div>
 
 

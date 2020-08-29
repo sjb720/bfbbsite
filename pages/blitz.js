@@ -122,6 +122,13 @@ export default class Index extends React.Component {
 
         {this.state.room == null &&
           <Container>
+            <style>{`
+              body{
+                background-image: url("bg-ocean.jpg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+              }
+              `}</style>
             <title>BfBB Blitz</title>
             <h1 style={{ textAlign: "center", paddingTop: 100, paddingBottom: 100 }}>
               Welcome to BfBB Blitz!
@@ -150,7 +157,7 @@ export default class Index extends React.Component {
             </InputGroup>
             <br></br>
 
-            <Button disabled={this.state.display_name_input.length < 1 || this.state.room_password_input.length < 1} block variant="outline-primary" onClick={() => this.createRoomAndJoin()}>Create Room</Button>
+            <Button disabled={this.state.display_name_input.length < 1 || this.state.room_password_input.length < 1} block variant={this.state.display_name_input.length < 1 || this.state.room_password_input.length < 1 ? "outline-primary" : "primary"} onClick={() => this.createRoomAndJoin()}>Create Room</Button>
             <br></br>
             <InputGroup className="mb-3">
 
@@ -160,17 +167,15 @@ export default class Index extends React.Component {
                 aria-describedby="basic-addon2"
               />
               <InputGroup.Append>
-                <Button disabled={this.state.display_name_input.length < 1 || this.state.room_password_input.length < 1} variant="outline-primary" onClick={() => this.joinRoom(this.state.rid_input)}>Join Room</Button>
+                <Button disabled={this.state.display_name_input.length < 1 || this.state.room_password_input.length < 1} variant={this.state.display_name_input.length < 1 || this.state.room_password_input.length < 1 ? "outline-primary" : "primary"} onClick={() => this.joinRoom(this.state.rid_input)}>Join Room</Button>
               </InputGroup.Append>
             </InputGroup>
 
-            <Accordion defaultActiveKey="0" style={{ color: "black" }}>
-              <Card className="bg-dark text-white">
-                <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="1">
-                    How to play
+            <Accordion defaultActiveKey="0">
+              <Card className="bg-primary text-black">
+                  <Accordion.Toggle as={Card.Header} eventKey="1">
+                    How To Play
                   </Accordion.Toggle>
-                </Card.Header>
                 <Accordion.Collapse eventKey="1">
                   <Card.Body>
                     <p>
@@ -221,12 +226,10 @@ export default class Index extends React.Component {
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card className="bg-dark text-white">
-                <Card.Header>
-                  <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                    Rulesets
+              <Card className="bg-primary text-white">
+                <Accordion.Toggle as={Card.Header} eventKey="2">
+                  Rulesets
                   </Accordion.Toggle>
-                </Card.Header>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body>
                     <h2>Normal</h2>
@@ -248,9 +251,9 @@ export default class Index extends React.Component {
           <div>
             <title>BfBB Blitz: Room {this.state.room.id} [{this.state.room.players.length}/8]</title>
             <Alert variant="dark">
-        Room <b>{this.state.room.id}</b><span style={{float:"right"}}>Spectate at <Alert.Link href={'https://bobhub.net/spectate/blitz/'+this.state.room.id}>https://bobhub.net/spectate/blitz/{this.state.room.id}</Alert.Link></span>
+              Room <b>{this.state.room.id}</b> <span style={{ float: "right" }}>Spectate at <Alert.Link href={'https://bobhub.net/spectate/blitz/' + this.state.room.id}>https://bobhub.net/spectate/blitz/{this.state.room.id}</Alert.Link></span>
             </Alert>
-            <Form style={{paddingLeft:20, paddingRight:20}}>
+            <Form style={{ paddingLeft: 20, paddingRight: 20 }}>
               <Form.Group controlId="formBasicRange">
                 Adjust aspect ratio: <Form.Control min={2} max={6} value={this.state.padding_sides} type="range" onChange={(e) => this.setState({ padding_sides: e.target.value })} />
               </Form.Group>
