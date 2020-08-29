@@ -6,6 +6,8 @@ import BlitzBoard from '../../../components/BlitzBoard.js'
 const BACKEND_IP = "https://bfbbhub.herokuapp.com";
 //const BACKEND_IP = "http://172.16.127.245:3001";
 
+const POLLING_RATE_MILLI_SECONDS = 5000;
+
 export default class Index extends React.Component {
 
   constructor(props) {
@@ -21,15 +23,31 @@ export default class Index extends React.Component {
     return { query }
   }
 
+    //Refreshes your room periodically
+    refreshRoom() {
+      if (this.state.room == null) return; //whered the room go?
+      console.log("Getting new room data...")
+  
+      fetch(BACKEND_IP + '/blitz/getroom/' + this.state.room.id)
+        .then(res => res.json())
+        .then(data => {
+          this.setState({ room: data.room })
+        });
+    }
+
   componentDidMount() {
 
     
     fetch(BACKEND_IP+'/blitz/getroom/' + this.props.query.id)
       .then(res => res.json())
       .then(data => {
-        if(data.success==true)
+        if(data.success==true){
           this.setState({room:data.room})
-        else
+
+          const interval = setInterval(() => {
+            this.refreshRoom();
+          }, POLLING_RATE_MILLI_SECONDS);
+        }else
           this.setState({errorLoading:true})
       });
 

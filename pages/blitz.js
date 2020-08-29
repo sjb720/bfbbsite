@@ -1,10 +1,10 @@
 import React from 'react';
 import axios from 'axios';
 import BlitzBoard from '../components/BlitzBoard.js'
-import { Button, InputGroup, FormControl, Container, Col, Row, Alert, Accordion, Card } from 'react-bootstrap'
+import { Button, InputGroup, FormControl, Container, Col, Row, Alert, Accordion, Card, Form } from 'react-bootstrap'
 
 const BACKEND_IP = "https://bfbbhub.herokuapp.com";
-//const BACKEND_IP = "http://172.16.127.245:3001";
+//const BACKEND_IP = "http://172.16.127.23:3001";
 
 const POLLING_RATE_MILLI_SECONDS = 1000;
 
@@ -18,15 +18,16 @@ export default class Index extends React.Component {
       room: null,
       player_id: "",
       rid_input: "",
-      room_password_input:"",
+      room_password_input: "",
       display_name_input: "",
       secret: "",
+      padding_sides: 6,
     }
   }
 
-  collect  = (collectable_name) =>{
+  collect = (collectable_name) => {
 
-    let data = { pid: this.state.player_id, rid: this.state.room.id, collectable_name: collectable_name, secret:this.state.secret }
+    let data = { pid: this.state.player_id, rid: this.state.room.id, collectable_name: collectable_name, secret: this.state.secret }
 
     let options = {
       method: 'POST',
@@ -37,11 +38,11 @@ export default class Index extends React.Component {
     }
 
 
-    fetch(BACKEND_IP+'/blitz/collect', options)
+    fetch(BACKEND_IP + '/blitz/collect', options)
       .then(res => res.json())
       .then(data => {
-        if (data.success){
-          this.setState({room: data.room});
+        if (data.success) {
+          this.setState({ room: data.room });
         }
         console.log(data)
       });
@@ -55,7 +56,7 @@ export default class Index extends React.Component {
 
   createRoomAndJoin() {
 
-    let data = { pid: this.state.player_id, dn: this.state.display_name_input,room_password:this.state.room_password_input }
+    let data = { pid: this.state.player_id, dn: this.state.display_name_input, room_password: this.state.room_password_input }
 
     let options = {
       method: 'POST',
@@ -70,7 +71,7 @@ export default class Index extends React.Component {
       .then(res => res.json())
       .then(data => {
         this.setState({ room: data.room })
-        this.setState({secret: data.secret})
+        this.setState({ secret: data.secret })
         //Get new room data
         const interval = setInterval(() => {
           this.refreshRoom();
@@ -79,7 +80,7 @@ export default class Index extends React.Component {
   }
 
   joinRoom(rid) {
-    let data = { pid: this.state.player_id, rid: rid, dn: this.state.display_name_input,room_password:this.state.room_password_input }
+    let data = { pid: this.state.player_id, rid: rid, dn: this.state.display_name_input, room_password: this.state.room_password_input }
 
     let options = {
       method: 'POST',
@@ -122,7 +123,7 @@ export default class Index extends React.Component {
         {this.state.room == null &&
           <Container>
             <title>BfBB Blitz</title>
-            <h1 style={{textAlign:"center", paddingTop:100,paddingBottom:100}}>
+            <h1 style={{ textAlign: "center", paddingTop: 100, paddingBottom: 100 }}>
               Welcome to BfBB Blitz!
             </h1>
             <InputGroup className="mb-3">
@@ -133,7 +134,7 @@ export default class Index extends React.Component {
                 placeholder="1 - 10 characters"
                 aria-label="1 - 10 characters"
                 aria-describedby="basic-addon1"
-                
+
               />
             </InputGroup>
             <InputGroup className="mb-3">
@@ -141,8 +142,8 @@ export default class Index extends React.Component {
                 <InputGroup.Text id="basic-addon1">Room Password</InputGroup.Text>
               </InputGroup.Prepend>
               <FormControl onChange={e => this.setState({ room_password_input: e.target.value })} defaultValue={this.state.room_password_input}
-                placeholder="The password you'll be giving your friends or your friend gave you."
-                aria-label="The password you'll be giving your friends or your friend gave you."
+                placeholder="The password you'll be giving your friends or your friend gave you. Don't let your viewers guess it."
+                aria-label="The password you'll be giving your friends or your friend gave you. Don't let your viewers guess it."
                 aria-describedby="basic-addon1"
                 type="password"
               />
@@ -163,8 +164,8 @@ export default class Index extends React.Component {
               </InputGroup.Append>
             </InputGroup>
 
-            <Accordion defaultActiveKey="0" style={{color:"black"}}>
-              <Card>
+            <Accordion defaultActiveKey="0" style={{ color: "black" }}>
+              <Card className="bg-dark text-white">
                 <Card.Header>
                   <Accordion.Toggle as={Button} variant="link" eventKey="1">
                     How to play
@@ -195,9 +196,6 @@ export default class Index extends React.Component {
                       The winner is determined after every object has been collected on the board. The winner is the player with the highest score. Players
                       reserve the right to forfeit if they have no chance of winning.
                     </p>
-                    <p>
-                      Certain in game cheats are allowed, see the list for more info.
-                    </p>
                     <h2>
                       Strategy
                     </h2>
@@ -219,22 +217,24 @@ export default class Index extends React.Component {
                     <p>
                       Mix it up. People will learn your favorite collectables and try to sabotage you through such.
                     </p>
-                    
+
                   </Card.Body>
                 </Accordion.Collapse>
               </Card>
-              <Card>
+              <Card className="bg-dark text-white">
                 <Card.Header>
                   <Accordion.Toggle as={Button} variant="link" eventKey="2">
-                    Allowed in game cheats
+                    Rulesets
                   </Accordion.Toggle>
                 </Card.Header>
                 <Accordion.Collapse eventKey="2">
                   <Card.Body>
-                    The following IGC are allowed to be entered as many times or at any point during the game:
+                    <h2>Normal</h2>
+                      No in game cheats allowed.
+                    <h2>Sandbox</h2>
+                    The following in game cheats are allowed to be entered as many times or at any point during the game:
                     <ul>
                       <li>10 Gold Spatulas</li>
-                      <li>1,000 Shiny Objects</li>
                       <li>Bubble Bowl Power</li>
                       <li>Cruise Bubble Power</li>
                     </ul>
@@ -246,11 +246,16 @@ export default class Index extends React.Component {
           </Container>}
         {this.state.room != null &&
           <div>
-            <title>BfBB Blitz: Room {this.state.room.id}</title>
-            <Alert variant="primary">
-              {this.state.room.players.length}/8 players. Invite more with your password and room code: <b>{this.state.room.id}</b>
+            <title>BfBB Blitz: Room {this.state.room.id} [{this.state.room.players.length}/8]</title>
+            <Alert variant="dark">
+        Room <b>{this.state.room.id}</b><span style={{float:"right"}}>Spectate at <Alert.Link href={'https://bobhub.net/spectate/blitz/'+this.state.room.id}>https://bobhub.net/spectate/blitz/{this.state.room.id}</Alert.Link></span>
             </Alert>
-            <BlitzBoard pid={this.state.player_id} room={this.state.room} collect_function={this.collect}></BlitzBoard>
+            <Form style={{paddingLeft:20, paddingRight:20}}>
+              <Form.Group controlId="formBasicRange">
+                Adjust aspect ratio: <Form.Control min={2} max={6} value={this.state.padding_sides} type="range" onChange={(e) => this.setState({ padding_sides: e.target.value })} />
+              </Form.Group>
+            </Form>
+            <BlitzBoard pid={this.state.player_id} room={this.state.room} collect_function={this.collect} padding={this.state.padding_sides}></BlitzBoard>
 
           </div>}
 
