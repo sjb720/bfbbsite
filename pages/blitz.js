@@ -18,8 +18,33 @@ export default class Index extends React.Component {
       room: null,
       player_id: "",
       rid_input: "",
+      room_password_input:"",
       display_name_input: "",
+      secret: "",
     }
+  }
+
+  collect  = (collectable_name) =>{
+
+    let data = { pid: this.state.player_id, rid: this.state.room.id, collectable_name: collectable_name, secret:this.state.secret }
+
+    let options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    }
+
+
+    fetch(BACKEND_IP+'/blitz/collect', options)
+      .then(res => res.json())
+      .then(data => {
+        if (data.success){
+          this.setState({room: data.room});
+        }
+        console.log(data)
+      });
   }
 
   componentDidMount() {
@@ -30,7 +55,7 @@ export default class Index extends React.Component {
 
   createRoomAndJoin() {
 
-    let data = { pid: this.state.player_id, dn: this.state.display_name_input }
+    let data = { pid: this.state.player_id, dn: this.state.display_name_input,room_password:this.state.room_password_input }
 
     let options = {
       method: 'POST',
@@ -44,7 +69,8 @@ export default class Index extends React.Component {
     fetch(BACKEND_IP + '/blitz/createroom', options)
       .then(res => res.json())
       .then(data => {
-        this.setState({ room: data })
+        this.setState({ room: data.room })
+        this.setState({secret: data.secret})
         //Get new room data
         const interval = setInterval(() => {
           this.refreshRoom();
@@ -53,7 +79,7 @@ export default class Index extends React.Component {
   }
 
   joinRoom(rid) {
-    let data = { pid: this.state.player_id, rid: rid, dn: this.state.display_name_input }
+    let data = { pid: this.state.player_id, rid: rid, dn: this.state.display_name_input,room_password:this.state.room_password_input }
 
     let options = {
       method: 'POST',
@@ -67,7 +93,8 @@ export default class Index extends React.Component {
     fetch(BACKEND_IP + '/blitz/joinroom', options)
       .then(res => res.json())
       .then(data => {
-        this.setState({ room: data })
+        this.setState({ room: data.room })
+        this.setState({ secret: data.secret })
         //Get new room data
         const interval = setInterval(() => {
           this.refreshRoom();
@@ -83,7 +110,7 @@ export default class Index extends React.Component {
     fetch(BACKEND_IP + '/blitz/getroom/' + this.state.room.id)
       .then(res => res.json())
       .then(data => {
-        this.setState({ room: data })
+        this.setState({ room: data.room })
       });
   }
 
@@ -106,10 +133,23 @@ export default class Index extends React.Component {
                 placeholder="1 - 10 characters"
                 aria-label="1 - 10 characters"
                 aria-describedby="basic-addon1"
+                
+              />
+            </InputGroup>
+            <InputGroup className="mb-3">
+              <InputGroup.Prepend>
+                <InputGroup.Text id="basic-addon1">Room Password</InputGroup.Text>
+              </InputGroup.Prepend>
+              <FormControl onChange={e => this.setState({ room_password_input: e.target.value })} defaultValue={this.state.room_password_input}
+                placeholder="The password you'll be giving your friends or your friend gave you."
+                aria-label="The password you'll be giving your friends or your friend gave you."
+                aria-describedby="basic-addon1"
+                type="password"
               />
             </InputGroup>
             <br></br>
-            <Button disabled={this.state.display_name_input.length < 1} variant="outline-primary" style={{ width: "100%", marginBottom: 5 }} onClick={() => this.createRoomAndJoin()}>Create Room</Button>
+
+            <Button disabled={this.state.display_name_input.length < 1 || this.state.room_password_input.length < 1} block variant="outline-primary" onClick={() => this.createRoomAndJoin()}>Create Room</Button>
             <br></br>
             <InputGroup className="mb-3">
 
@@ -119,7 +159,7 @@ export default class Index extends React.Component {
                 aria-describedby="basic-addon2"
               />
               <InputGroup.Append>
-                <Button disabled={this.state.display_name_input.length < 1} variant="outline-primary" onClick={() => this.joinRoom(this.state.rid_input)}>Join Room</Button>
+                <Button disabled={this.state.display_name_input.length < 1 || this.state.room_password_input.length < 1} variant="outline-primary" onClick={() => this.joinRoom(this.state.rid_input)}>Join Room</Button>
               </InputGroup.Append>
             </InputGroup>
 
@@ -208,9 +248,9 @@ export default class Index extends React.Component {
           <div>
             <title>BfBB Blitz: Room {this.state.room.id}</title>
             <Alert variant="primary">
-              {this.state.room.players.length}/8 players. Invite more with: <b>{this.state.room.id}</b>
+              {this.state.room.players.length}/8 players. Invite more with your password and room code: <b>{this.state.room.id}</b>
             </Alert>
-            <BlitzBoard pid={this.state.player_id} room={this.state.room}></BlitzBoard>
+            <BlitzBoard pid={this.state.player_id} room={this.state.room} collect_function={this.collect}></BlitzBoard>
 
           </div>}
 

@@ -31,7 +31,7 @@ const BlitzBoard = (props) => (
                                     <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr", width: "100%", justifyContent: 'space-between' }}>
                                         {props.room.board.tasks.map(task => {
                                             if (task.level == level) return (
-                                                <BlitzGrid rid={props.room.id} pid={props.pid} name={task.name} type={task.type} collected={task.collected} collector={task.collector} />)
+                                                <BlitzGrid rid={props.room.id} pid={props.pid} name={task.name} type={task.type} collected={task.collected} collector={task.collector} collect_function={props.collect_function} />)
                                         }
                                         )}
                                     </div>
@@ -46,7 +46,7 @@ const BlitzBoard = (props) => (
             <Col>
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr", width: "100%", justifyContent: 'space-between' }}>
                     {props.room.board.tasks.map(task =>
-                        <BlitzGrid rid={props.room.id} pid={props.pid} name={task.name} type={task.type} collected={task.collected} collector={task.collector} />
+                        <BlitzGrid rid={props.room.id} pid={props.pid} name={task.name} type={task.type} collected={task.collected} collector={task.collector} collect_function={props.collect_function} />
                     )}
                 </div>
             </Col>

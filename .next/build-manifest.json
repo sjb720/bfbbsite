@@ -28,6 +28,11 @@
       "static/chunks/main.js",
       "static/chunks/webpack.js",
       "static/chunks/pages/blitz.js"
+    ],
+    "/spectate/blitz/[id]": [
+      "static/chunks/main.js",
+      "static/chunks/webpack.js",
+      "static/chunks/pages/spectate/blitz/[id].js"
     ]
   },
   "ampFirstPages": []

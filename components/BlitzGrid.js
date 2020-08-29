@@ -17,31 +17,12 @@ export default class BlitzGrid extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      collected: false,
+      
     }
   }
 
   onClick() {
-
-    let data = { pid: this.props.pid, rid: this.props.rid, collectable_name: this.props.name }
-
-    let options = {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(data),
-    }
-
-
-    fetch(BACKEND_IP+'/blitz/collect', options)
-      .then(res => res.json())
-      .then(data => {
-        this.setState({ room: data })
-        if (data.success)
-          this.setState({collected:true});
-      });
-
+    this.props.collect_function(""+this.props.name);
   }
 
   render() {
@@ -53,11 +34,11 @@ export default class BlitzGrid extends React.Component {
           overlay={renderTooltip(this.props)}>
           <div>
             {!this.props.collected &&
-              <div class="butt" onClick={() => this.onClick()} style={{ backgroundImage: ('url("' + this.props.type + '/' + this.props.name + '.png' + '")') }} />
+              <div class="butt" onClick={() => this.onClick()} style={{ backgroundImage: ('url("/' + this.props.type + '/' + this.props.name + '.png' + '")') }} />
             }
 
             {this.props.collected &&
-              <div class="butt" onClick={() => this.onClick()} style={{backgroundColor: this.props.collector.color,boxShadow:"inset 0px 0px 0px 3px"+this.props.collector.color, backgroundImage: ('url("' + this.props.type + '/' + this.props.name + '.png' + '")') }} />
+              <div class="butt" onClick={() => this.onClick()} style={{backgroundColor: this.props.collector.color,boxShadow:"inset 0px 0px 0px 3px"+this.props.collector.color, backgroundImage: ('url("/' + this.props.type + '/' + this.props.name + '.png' + '")') }} />
             }
           </div>
 
