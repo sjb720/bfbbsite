@@ -1,9 +1,10 @@
 import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 
 const renderTooltip = (props) => (
-  <Tooltip id="button-tooltip-2" {...props}>
-    {props.collected==true &&
-      <div style={{color:props.collector.color,fontWeight:"bold"}}>Collected by {props.collector.display_name}</div>
+  <Tooltip id="button-tooltip-2" style={{pointerEvents:"none"}} {...props}>
+    {props.collected==true ?
+      <div style={{color:props.collector.color,fontWeight:"bold"}}>Collected by {props.collector.display_name}</div> :
+      <div style={{color:(props.type=="Spatula" ? "Gold" : "White"),fontWeight:"bold"}}>{props.type}</div>
     }
     {props.name}
   </Tooltip>
@@ -27,7 +28,6 @@ export default class BlitzGrid extends React.Component {
       <div>
         <OverlayTrigger
           placement="top"
-          
           overlay={renderTooltip(this.props)}>
           <div>
             {!this.props.collected &&
