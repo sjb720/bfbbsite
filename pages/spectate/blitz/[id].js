@@ -1,11 +1,10 @@
 import { useRouter } from 'next/router'
 import fetch from 'node-fetch'
 import { DropdownButton, Dropdown, Button,Image } from 'react-bootstrap'
-import data from '../../../../bfbb-backend/routes/data.js';
 import BlitzBoard from '../../../components/BlitzBoard.js'
 
-//const BACKEND_IP = "https://bfbbhub.herokuapp.com";
-const BACKEND_IP = "http://172.16.127.245:3001";
+const BACKEND_IP = "https://bfbbhub.herokuapp.com";
+//const BACKEND_IP = "http://172.16.127.245:3001";
 
 export default class Index extends React.Component {
 
