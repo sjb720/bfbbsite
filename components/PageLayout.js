@@ -2,7 +2,7 @@ import { Navbar, Form, FormControl, Button, Dropdown, ButtonGroup, Image } from 
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { BiWorld, BiHomeAlt } from 'react-icons/bi'
-import BACKEND_URL from '../backendurl.js'
+import BACKEND_URL from './backendurl.js'
 
 
 export default class PageLayout extends React.Component {

@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import fetch from 'node-fetch'
 import { DropdownButton, Dropdown, Button, Container, Image, Badge, Card, Accordion } from 'react-bootstrap'
-import BACKEND_URL from '../backendurl.js'
+import BACKEND_URL from './backendurl.js'
 import ScrollAnimation from 'react-animate-on-scroll';
 
 export default class Area extends React.Component {
