@@ -1,6 +1,7 @@
 import React from 'react';
 import App from 'next/app';
-import setImmediate from 'setimmediate';
+import '../custom.scss';
+
 
 class MyApp extends App {
   // Only uncomment this method if you have blocking data requirements for

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default \"http://172.16.127.23:3001/\";","map":{"version":3,"sources":["/home/stephen/Desktop/BFBB_Client/bfbb-site/backendurl.js"],"names":[],"mappings":"AAAA,eAAe,4BAAf","sourcesContent":["export default \"http://172.16.127.23:3001/\";"]},"metadata":{},"sourceType":"module"}

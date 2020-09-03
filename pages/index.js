@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import BattleShipBoard from '../components/BattleShipBoard.js'
+import PageLayout from '../components/PageLayout.js'
 import { Button, InputGroup, FormControl, Container, Col, Row, Image } from 'react-bootstrap'
 
 const button_style = {
@@ -9,8 +9,6 @@ const button_style = {
 }
 
 export default class Index extends React.Component {
-
-
 
   constructor(props) {
     super(props)
@@ -26,12 +24,21 @@ export default class Index extends React.Component {
 
   render() {
     return (
-      <Container style={{textAlign:"Center"}}>
-        <Image src="/logo.png"></Image>
-        <Button variant="outline-primary" style={button_style} href="/blitz" >Blitz</Button>
-        <Button variant="outline-primary" style={button_style} href="/bingo" disabled>Bingo</Button>
-        <Button variant="outline-primary" style={button_style} href="/battleship" disabled>Battleship</Button>
-      </Container>
+      <PageLayout>
+        <title>The BfBB Resource Site!</title>
+        <Container style={{ textAlign: "Center" }}>
+          
+          <Image style={{paddingTop:20}} src="/bfbb-community-logo.png" fluid></Image>
+        </Container>
+
+
+        <style>{`body{
+        background-image: url("bg-ocean.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }`}</style>
+      </PageLayout>
+
 
     )
   }
