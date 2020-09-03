@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default \"https://bfbbhub.herokuapp.com/\";","map":{"version":3,"sources":["/home/stephen/Desktop/BFBB_Client/bfbb-site/backendurl.js"],"names":[],"mappings":"AAAA,eAAe,gCAAf","sourcesContent":["export default \"https://bfbbhub.herokuapp.com/\";"]},"metadata":{},"sourceType":"module"}

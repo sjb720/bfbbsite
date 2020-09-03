@@ -44,7 +44,7 @@ export default class Area extends React.Component {
             <Accordion>
                 {this.state.strats.map(strat =>
                     <Card bg="dark">
-                        <Accordion.Toggle as={Card.Header} eventKey={strat.name}>
+                        <Accordion.Toggle as={Card.Header} eventKey={strat.name} style={{cursor:"pointer"}}>
                             <span style={{fontSize:26}}>{strat.name}</span>
                             
                             <Button variant="outline-primary" style={{float:"right"}} onClick={()=>window.open('/strats/'+strat.name,'_blank')}>See more</Button>

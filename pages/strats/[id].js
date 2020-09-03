@@ -98,7 +98,7 @@ export default class Index extends React.Component {
               <Accordion>
                 {this.state.strat.methods.map(method =>
                   <Card bg="dark">
-                    <Accordion.Toggle as={Card.Header} eventKey={method.name}>
+                    <Accordion.Toggle as={Card.Header} eventKey={method.name} style={{cursor:"pointer"}}>
                       <span style={{ fontSize: 26 }}>{method.name}</span>
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey={method.name}>
