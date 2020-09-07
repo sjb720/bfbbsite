@@ -70,7 +70,7 @@ export default class Index extends React.Component {
 
   render() {
     if (this.state.level == null)
-      return (<div style={{ color: "#aabfff" }}>Loading level {this.props.query.id}...</div>)
+      return (<div style={{ color: "#aabfff" }}><title>Loading Level...</title>Loading level {this.props.query.id}...</div>)
 
     return (
       <PageLayout>
@@ -82,7 +82,7 @@ export default class Index extends React.Component {
 
           <Image style={{ borderRadius: "100px 0px", filter: "drop-shadow(0 0 0.75rem black)", paddingTop: 50, paddingBottom: 10 }} src={"/level-banners/" + this.state.level.name + ".png"} fluid></Image>
 
-          <ScrollAnimation animateIn="zoomIn" animateOnce="true">
+
             <div style={information_container}>
               <h1>
                 {this.state.level.name}
@@ -94,14 +94,14 @@ export default class Index extends React.Component {
                 {this.state.level.description}
               </p>
             </div>
-          </ScrollAnimation>
+
 
           {this.state.areas.map(area =>
-            <ScrollAnimation animateIn="zoomIn" animateOnce="true">
+
               <div style={information_container}>
                 <Area area={area}></Area>
               </div>
-            </ScrollAnimation>
+
           )}
 
 

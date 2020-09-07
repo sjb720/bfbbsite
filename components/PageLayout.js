@@ -31,7 +31,7 @@ export default class PageLayout extends React.Component {
   render() {
     return (<>
 
-      <div style={{ display: "flex", position: "relative", height: "calc(100% - 0px)" }}>
+      <div style={{ display: "flex", position: "relative", height: "calc(100% - 0px)",whiteSpace:"pre-wrap"}}>
         <ProSidebar
           collapsed={this.state.sidebarCollapsed}
           breakPoint="md">

@@ -78,7 +78,7 @@ export default class Index extends React.Component {
 
   render() {
     if (this.state.level == null)
-      return (<div style={{ color: "#aabfff" }}>Loading strat {this.props.query.id}...</div>)
+      return (<div style={{ color: "#aabfff" }}><title>Loading Strat...</title>Loading strat {this.props.query.id}...</div>)
 
     return (
       <PageLayout>
