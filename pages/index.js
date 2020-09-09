@@ -29,15 +29,28 @@ export default class Index extends React.Component {
         <title>The BfBB Resource Site!</title>
         <Container style={{ textAlign: "Center" }}>
 
-          <Image id="breathing" style={{ paddingTop: 20 }} src="/bfbb-community-logo.png" fluid></Image>
-
-          <iframe
-            id="tplayer"
-            src="https://player.twitch.tv/?channel=shift&parent=bfbbsite.vercel.app&parent=localhost"
-            style={{border:0,width:"100%"}}>
-          </iframe>
-
+          <Image id="breathing" style={{ paddingTop: 20, paddingBottom: 20 }} src="/bfbb-community-logo.png" fluid></Image>
         </Container>
+
+        <Row>
+          <Col style={{ padding: "2vw" }}>
+            Poggers!
+          </Col>
+          <Col style={{ padding: "2vw" }}>
+            <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%" }}>
+              <iframe
+                id="tplayer"
+                src="https://player.twitch.tv/?channel=shift&parent=bfbbsite.vercel.app&parent=localhost"
+                style={{ border: 0, position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
+              </iframe>
+            </div>
+
+          </Col>
+
+        </Row>
+
+
+
 
 
         <style>{`body{
@@ -102,7 +115,7 @@ export default class Index extends React.Component {
     
       
       `}</style>
-      </PageLayout>
+      </PageLayout >
 
 
     )
