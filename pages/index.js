@@ -32,9 +32,9 @@ export default class Index extends React.Component {
           <Image id="breathing" style={{ paddingTop: 20 }} src="/bfbb-community-logo.png" fluid></Image>
 
           <iframe
-            src="https://player.twitch.tv/?channel=shift&parent=https://bfbbsite.vercel.app/"
-            height="100%"
-            width="100%">
+            id="tplayer"
+            src="https://player.twitch.tv/?channel=shift&parent=bfbbsite.vercel.app&parent=localhost"
+            style={{border:0,width:"100%"}}>
           </iframe>
 
         </Container>
