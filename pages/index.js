@@ -41,29 +41,44 @@ export default class Index extends React.Component {
 
           </Col>
           <Col sm={6} style={{ paddingTop: 20 }}>
-            <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%" }}>
-              <iframe
-                id="tplayer"
-                src="https://player.twitch.tv/?channel=bfbbcommunity&parent=bfbbsite.vercel.app&parent=localhost"
-                style={{ border: 0, position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
-              </iframe>
+            <Col>
+              <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%" }}>
+                <iframe
+                  id="tplayer"
+                  src="https://player.twitch.tv/?channel=bfbbcommunity&parent=bfbbsite.vercel.app&parent=localhost"
+                  style={{ border: 0, position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
+                </iframe>
 
-            </div>
-            <div style={{ position: "relative", top: -5 }}>
-              <TwitterTimelineEmbed
-                sourceType="profile"
-                screenName="BfBBCommunity"
-                theme="dark"
-                noHeader
-                noFooter
-                options={{ height: "350px" }}
+              </div>
+              <div style={{ position: "relative", top: -5,width:"50%",float:"left",textAlign:"left" }}>
+                <TwitterTimelineEmbed
+                  sourceType="profile"
+                  screenName="BfBBCommunity"
+                  theme="dark"
+                  noHeader
+                  noFooter
+                  options={{ height: "350px" }}
 
-              />
-              <TwitterFollowButton
-                screenName={'BfBBCommunity'}
-              />
-            </div>
+                />
+                <TwitterFollowButton
+                  screenName={'BfBBCommunity'}
+                />
+              </div>
+              <div style={{ position: "relative", top: -5,width:"50%",float:"right" }}>
+                <TwitterTimelineEmbed
+                  sourceType="likes"
+                  screenName="BfBBCommunity"
+                  theme="dark"
+                  noHeader
+                  noFooter
+                  options={{ height: "350px" }}
 
+                />
+                
+              </div>
+              
+              
+            </Col>
           </Col>
 
         </Row>

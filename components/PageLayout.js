@@ -1,4 +1,4 @@
-import { Navbar, Form, FormControl, Button, Dropdown, ButtonGroup, Image } from 'react-bootstrap'
+import { Navbar, Form, FormControl, Button, Dropdown, ButtonGroup, Image, Nav, NavDropdown } from 'react-bootstrap'
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { BiWorld, BiHomeAlt } from 'react-icons/bi'
@@ -30,25 +30,33 @@ export default class PageLayout extends React.Component {
 
   render() {
     return (<>
-<Navbar className="bg-dark justify-content-between">
-        <Form inline >
-          <Image onClick={() => document.location.href = "/"} src="/crash_header_logo.png" height="40"></Image>
-        </Form>
-        <Form inline>
-          <Dropdown as={ButtonGroup}>
-            <Button variant="primary"></Button>
 
-            <Dropdown.Toggle split variant="primary" id="dropdown-split-basic" />
-
-            <Dropdown.Menu id="dropdown-menu-align-right" alignRight>
-              <Dropdown.Item href="/settings">Settings</Dropdown.Item>
-              <Dropdown.Item onClick={() => this.logout()}>Logout</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </Form>
+      <Navbar bg="dark" variant="dark" expand="lg" style={{zIndex:10000000}}>
+        <Navbar.Brand href="/">BfBB</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <NavDropdown title="Speedrunning" id="basic-nav-dropdown">
+              <NavDropdown.Item href="/levels">Levels</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="https://www.speedrun.com/bfbb">Leaderboards</NavDropdown.Item>
+              <NavDropdown.Item href="/tutorials">Tutorials</NavDropdown.Item>
+              
+              <NavDropdown.Item href="/strats">Strats</NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="/randomizer">Randomizer</Nav.Link>
+            <Nav.Link href="/blitz">Blitz</Nav.Link>
+            <Nav.Link href="/bingo">Bingo</Nav.Link>
+            <Nav.Link href="/modding">Modding</Nav.Link>
+            <Nav.Link href="/tas">TAS</Nav.Link>
+          </Nav>
+          <Form inline>
+            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+          </Form>
+        </Navbar.Collapse>
       </Navbar>
 
-      <div style={{ display: "flex", position: "relative", height: "calc(100% - 56px)",whiteSpace:"pre-wrap"}}>
+      <div style={{ display: "flex", position: "relative", height: "calc(100% - 56px)", whiteSpace: "pre-wrap" }}>
         <ProSidebar
           collapsed={this.state.sidebarCollapsed}
           breakPoint="md">
@@ -101,7 +109,7 @@ export default class PageLayout extends React.Component {
 /*
 
 
-      
+
 
 
 
