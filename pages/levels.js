@@ -46,7 +46,7 @@ export default class Index extends React.Component {
     return (
       <PageLayout>
 
-        <title>Strats</title>
+        <title>Levels</title>
         <div class="bg-image">
         </div>
 

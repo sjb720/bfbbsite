@@ -80,7 +80,7 @@ export default class Index extends React.Component {
 
         <Container>
 
-          <Image style={{ borderRadius: "100px 0px", filter: "drop-shadow(0 0 0.75rem black)", paddingTop: 50, paddingBottom: 10 }} src={"/level-banners/" + this.state.level.name + ".png"} fluid></Image>
+          <Image style={{ borderRadius: 50, filter: "drop-shadow(0 0 0.75rem black)", marginTop: 50, marginBottom: 10 }} src={"/level-banners/" + this.state.level.name + ".png"} fluid></Image>
 
 
             <div style={information_container}>
