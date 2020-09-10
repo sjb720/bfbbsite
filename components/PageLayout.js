@@ -1,7 +1,7 @@
 import { Navbar, Form, FormControl, Button, Dropdown, ButtonGroup, Image, Nav, NavDropdown } from 'react-bootstrap'
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
-import { BiWorld, BiHomeAlt } from 'react-icons/bi'
+import { BiWorld, BiHomeAlt,BiWrench } from 'react-icons/bi'
 import BACKEND_URL from './backendurl.js'
 
 
@@ -31,7 +31,7 @@ export default class PageLayout extends React.Component {
   render() {
     return (<>
 
-      <Navbar bg="dark" variant="dark" expand="lg" style={{zIndex:10000000}}>
+      <Navbar bg="dark" variant="dark" expand="lg" style={{ zIndex: 10000000 }}>
         <Navbar.Brand href="/">BfBB</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -41,7 +41,7 @@ export default class PageLayout extends React.Component {
               <NavDropdown.Divider />
               <NavDropdown.Item href="https://www.speedrun.com/bfbb">Leaderboards</NavDropdown.Item>
               <NavDropdown.Item href="/tutorials">Tutorials</NavDropdown.Item>
-              
+
               <NavDropdown.Item href="/strats">Strats</NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="/randomizer">Randomizer</Nav.Link>
@@ -59,7 +59,10 @@ export default class PageLayout extends React.Component {
       <div style={{ display: "flex", position: "relative", height: "calc(100% - 56px)", whiteSpace: "pre-wrap" }}>
         <ProSidebar
           collapsed={this.state.sidebarCollapsed}
-          breakPoint="md">
+          breakPoint="md"
+          onPointerEnter={() => this.setState({ sidebarCollapsed: false })}
+          onPointerLeave={() => this.setState({ sidebarCollapsed: true })}
+        >
           <SidebarHeader>
             <SidebarContent>
               <Menu iconShape="circle">
@@ -72,10 +75,16 @@ export default class PageLayout extends React.Component {
           </SidebarHeader>
           <SidebarContent>
             <Menu iconShape="circle">
-              <SubMenu icon={<BiWorld />} title="Levels" >
-                {this.state.levels.map(level => <MenuItem onClick={() => location.replace('/levels/' + level.name)}>{level.name}</MenuItem>)}
-              </SubMenu>
+              <MenuItem
+                icon={<BiWorld />}
+              ><a href="/levels">Levels</a>
+              </MenuItem>
+              <MenuItem
+                icon={<BiWrench />}
+              ><a href="/strats">Strats</a>
+              </MenuItem>
             </Menu>
+
           </SidebarContent>
           <SidebarFooter>
             {this.state.sidebarCollapsed == false &&
