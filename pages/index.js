@@ -2,12 +2,14 @@ import React from 'react';
 import axios from 'axios';
 import PageLayout from '../components/PageLayout.js'
 import { Button, InputGroup, FormControl, Container, Col, Row, Image } from 'react-bootstrap'
+import { TwitterTimelineEmbed, TwitterShareButton, TwitterFollowButton, TwitterHashtagButton, TwitterMentionButton, TwitterTweetEmbed, TwitterMomentShare, TwitterDMButton, TwitterVideoEmbed, TwitterOnAirButton } from 'react-twitter-embed';
 
 
 const button_style = {
   width: "100%",
   marginTop: 20
 }
+
 
 export default class Index extends React.Component {
 
@@ -18,6 +20,8 @@ export default class Index extends React.Component {
     }
   }
 
+
+
   componentDidMount() {
 
   }
@@ -27,22 +31,37 @@ export default class Index extends React.Component {
     return (
       <PageLayout>
         <title>The BfBB Resource Site!</title>
-        <Container style={{ textAlign: "Center" }}>
 
-          <Image id="breathing" style={{ paddingTop: 20, paddingBottom: 20 }} src="/bfbb-community-logo.png" fluid></Image>
-        </Container>
+        <Row style={{ position: "relative", textAlign: "center", width: "100%", paddingLeft: 30 }}>
+          <Col sm={6} style={{ padding: "2vw" }}>
+            <div style={{ textAlign: "left" }}>
+              <Image id="breathing" src="/bfbb-community-logo.png" fluid></Image>
 
-        <Row>
-          <Col style={{ padding: "2vw" }}>
-            Poggers!
+            </div>
+
           </Col>
-          <Col style={{ padding: "2vw" }}>
+          <Col sm={6} style={{ paddingTop: 20 }}>
             <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%" }}>
               <iframe
                 id="tplayer"
-                src="https://player.twitch.tv/?channel=shift&parent=bfbbsite.vercel.app&parent=localhost"
+                src="https://player.twitch.tv/?channel=bfbbcommunity&parent=bfbbsite.vercel.app&parent=localhost"
                 style={{ border: 0, position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
               </iframe>
+
+            </div>
+            <div style={{ position: "relative", top: -5 }}>
+              <TwitterTimelineEmbed
+                sourceType="profile"
+                screenName="BfBBCommunity"
+                theme="dark"
+                noHeader
+                noFooter
+                options={{ height: "350px" }}
+
+              />
+              <TwitterFollowButton
+                screenName={'BfBBCommunity'}
+              />
             </div>
 
           </Col>

@@ -30,8 +30,25 @@ export default class PageLayout extends React.Component {
 
   render() {
     return (<>
+<Navbar className="bg-dark justify-content-between">
+        <Form inline >
+          <Image onClick={() => document.location.href = "/"} src="/crash_header_logo.png" height="40"></Image>
+        </Form>
+        <Form inline>
+          <Dropdown as={ButtonGroup}>
+            <Button variant="primary"></Button>
 
-      <div style={{ display: "flex", position: "relative", height: "calc(100% - 0px)",whiteSpace:"pre-wrap"}}>
+            <Dropdown.Toggle split variant="primary" id="dropdown-split-basic" />
+
+            <Dropdown.Menu id="dropdown-menu-align-right" alignRight>
+              <Dropdown.Item href="/settings">Settings</Dropdown.Item>
+              <Dropdown.Item onClick={() => this.logout()}>Logout</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Form>
+      </Navbar>
+
+      <div style={{ display: "flex", position: "relative", height: "calc(100% - 56px)",whiteSpace:"pre-wrap"}}>
         <ProSidebar
           collapsed={this.state.sidebarCollapsed}
           breakPoint="md">
@@ -84,23 +101,7 @@ export default class PageLayout extends React.Component {
 /*
 
 
-      <Navbar className="bg-dark justify-content-between">
-        <Form inline >
-          <Image onClick={() => document.location.href = "/"} src="/crash_header_logo.png" height="40"></Image>
-        </Form>
-        <Form inline>
-          <Dropdown as={ButtonGroup}>
-            <Button variant="primary"></Button>
-
-            <Dropdown.Toggle split variant="primary" id="dropdown-split-basic" />
-
-            <Dropdown.Menu id="dropdown-menu-align-right" alignRight>
-              <Dropdown.Item href="/settings">Settings</Dropdown.Item>
-              <Dropdown.Item onClick={() => this.logout()}>Logout</Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-        </Form>
-      </Navbar>
+      
 
 
 
