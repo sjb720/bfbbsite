@@ -5,8 +5,7 @@ import PageLayout from '../components/PageLayout.js'
 import Area from '../components/Area.js'
 import BACKEND_URL from '../components/backendurl.js'
 import ScrollAnimation from 'react-animate-on-scroll';
-
-const information_container = { backgroundColor: "#111111aa", borderRadius: 20, filter: "drop-shadow(0 0 0.75rem black)", padding: 20, paddingBottom: 10, marginTop: 10 }
+import InformationContainer from '../components/InformationContainer.js'
 
 export default class Index extends React.Component {
 
@@ -51,8 +50,7 @@ export default class Index extends React.Component {
         </div>
 
         <Container>
-          <div style={information_container}>
-
+          <InformationContainer>
 
             <Accordion>
 
@@ -69,7 +67,7 @@ export default class Index extends React.Component {
                 </Card>
               )}
             </Accordion>
-          </div>
+          </InformationContainer>
 
         </Container>
 

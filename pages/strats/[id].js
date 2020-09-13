@@ -5,8 +5,7 @@ import PageLayout from '../../components/PageLayout.js'
 import Area from '../../components/Area.js'
 import BACKEND_URL from '../../components/backendurl.js'
 import ScrollAnimation from 'react-animate-on-scroll';
-
-const information_container = { backgroundColor: "#111111aa", borderRadius: 20, filter: "drop-shadow(0 0 0.75rem black)", padding: 20, paddingBottom: 10, marginTop: 10 }
+import InformationContainer from '../../components/InformationContainer.js'
 
 export default class Index extends React.Component {
 
@@ -89,10 +88,10 @@ export default class Index extends React.Component {
 
         <Container>
 
-          <Image style={{ borderRadius: "100px 0px", filter: "drop-shadow(0 0 0.75rem black)", paddingTop: 50, paddingBottom: 10 }} src={"/level-banners/" + this.state.level.name + ".png"} fluid></Image>
+          <Image style={{ borderRadius: 50, filter: "drop-shadow(0 0 0.75rem black)", marginTop: 50, marginBottom: 10 }} src={"/level-banners/" + this.state.level.name + ".png"} fluid></Image>
 
           <ScrollAnimation animateIn="zoomIn" animateOnce="true">
-            <div style={information_container}>
+            <InformationContainer>
               <h1>{this.state.strat.name}<span class="badge badge-dark" style={{ marginLeft: 10 }}>{this.state.area.internal_name}</span></h1>
               <p>{this.state.strat.description}</p>
               <Accordion>
@@ -112,7 +111,7 @@ export default class Index extends React.Component {
                 )}
               </Accordion>
 
-            </div>
+            </InformationContainer>
           </ScrollAnimation>
 
         </Container>

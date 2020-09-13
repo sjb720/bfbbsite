@@ -6,8 +6,6 @@ import Area from '../components/Area.js'
 import BACKEND_URL from '../components/backendurl.js'
 import ScrollAnimation from 'react-animate-on-scroll';
 
-const information_container = { backgroundColor: "#111111aa", borderRadius: 20, filter: "drop-shadow(0 0 0.75rem black)", padding: 20, paddingBottom: 10, marginTop: 10 }
-
 export default class Index extends React.Component {
 
   constructor(props) {
@@ -55,12 +53,14 @@ export default class Index extends React.Component {
 
 
           {this.state.levels.map(level =>
-            <a href={"/levels/" + level.name}>
-              <Image fluid src={"/level-banners/" + level.name + ".png"}
-                href={"/levels/" + level.name}
-                style={{ borderRadius: 50, margin: 10, cursor: "pointer" }}
+            <div class="wiggle">
+              <a href={"/levels/" + level.name}>
+                <Image fluid src={"/level-banners/" + level.name + ".png"}
+                  href={"/levels/" + level.name}
+                  style={{ borderRadius: 50, margin: 10, cursor: "pointer" }}
                 ></Image>
-            </a>
+              </a>
+            </div>
 
           )}
 
@@ -88,6 +88,19 @@ export default class Index extends React.Component {
             right: 0;
             z-index: -10;
 
+          }
+
+          .wiggle:hover {
+            animation: wiggle 0.5s ease;
+            animation-iteration-count: 1;
+          }
+
+          @keyframes wiggle {
+            20%  { transform: translateX(8px);  }
+            40%  { transform: translateX(-8px); }
+            60%  { transform: translateX(4px);  }
+            80%  { transform: translateX(-2px); }
+            100% { transform: translateX(0);    }
           }
         `}</style>
       </PageLayout>

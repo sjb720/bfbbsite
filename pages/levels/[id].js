@@ -5,8 +5,7 @@ import PageLayout from '../../components/PageLayout.js'
 import Area from '../../components/Area.js'
 import BACKEND_URL from '../../components/backendurl.js'
 import ScrollAnimation from 'react-animate-on-scroll';
-
-const information_container = { backgroundColor: "#111111aa", borderRadius: 20, filter: "drop-shadow(0 0 0.75rem black)", padding: 20, paddingBottom: 10, marginTop: 10 }
+import InformationContainer from '../../components/InformationContainer.js'
 
 export default class Index extends React.Component {
 
@@ -83,7 +82,7 @@ export default class Index extends React.Component {
           <Image style={{ borderRadius: 50, filter: "drop-shadow(0 0 0.75rem black)", marginTop: 50, marginBottom: 10 }} src={"/level-banners/" + this.state.level.name + ".png"} fluid></Image>
 
 
-            <div style={information_container}>
+            <InformationContainer>
               <h1>
                 {this.state.level.name}
                 <span class="badge badge-primary" style={{ marginLeft: 10 }}>{this.state.level.sock_count} Socks</span>
@@ -93,14 +92,14 @@ export default class Index extends React.Component {
               <p>
                 {this.state.level.description}
               </p>
-            </div>
+            </InformationContainer>
 
 
           {this.state.areas.map(area =>
 
-              <div style={information_container}>
+              <InformationContainer>
                 <Area area={area}></Area>
-              </div>
+              </InformationContainer>
 
           )}
 

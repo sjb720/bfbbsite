@@ -5,8 +5,7 @@ import { Button, InputGroup, FormControl, Container, Col, Row, Image, Table } fr
 import BACKEND_URL from '../components/backendurl.js'
 import AddArea from '../components/AddArea.js';
 import AddStrat from '../components/AddStrat.js';
-
-const information_container = { backgroundColor: "#111111aa", borderRadius: 20, filter: "drop-shadow(0 0 0.75rem black)", padding: 20, paddingBottom: 10, marginTop: 10 }
+import InformationContainer from '../components/InformationContainer.js'
 
 const button_style = {
   width: "100%",
@@ -168,7 +167,7 @@ export default class Index extends React.Component {
         <Container fluid style={{ textAlign: "Center" }}>
 
           {!this.state.authorized ?
-            <div style={information_container}>
+            <InformationContainer>
               <h1>
                 Prove you belong here.
               </h1>
@@ -185,11 +184,11 @@ export default class Index extends React.Component {
                 aria-describedby="basic-addon1"
               />
               <Button onClick={() => this.login()}>Verify Me</Button>
-            </div>
+            </InformationContainer>
 
             :
             <>
-              <div style={information_container}>
+              <InformationContainer>
                 Levels
                 <Table variant="dark" striped bordered hover size="sm">
                   <thead>
@@ -213,9 +212,9 @@ export default class Index extends React.Component {
                     )}
                   </tbody>
                 </Table>
-              </div>
+              </InformationContainer>
 
-              <div style={information_container}>
+              <InformationContainer>
 
                 <AddArea getDataMethod={this.getData}></AddArea>
 
@@ -244,10 +243,10 @@ export default class Index extends React.Component {
                     )}
                   </tbody>
                 </Table>
-              </div>
+              </InformationContainer>
 
 
-              <div style={information_container}>
+              <InformationContainer>
                 <AddStrat getDataMethod={this.getData}></AddStrat>
                 Strats
               <Table variant="dark" striped bordered hover size="sm">
@@ -272,7 +271,7 @@ export default class Index extends React.Component {
                     )}
                   </tbody>
                 </Table>
-              </div>
+              </InformationContainer>
             </>
           }
 
