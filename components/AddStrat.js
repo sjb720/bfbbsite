@@ -77,6 +77,7 @@ export default class AddStrat extends React.Component {
                     {this.state.area}
                 </Dropdown.Toggle>
                 <Dropdown.Menu style={{ position: "relative", zIndex: 10000 }}>
+                    <Dropdown.Item onClick={() => this.setState({ area: "GLOBAL" })}>GLOBAL</Dropdown.Item>
                     {this.state.areas.map(area =>
                         <Dropdown.Item onClick={() => this.setState({ area: area.internal_name })}>{area.internal_name}</Dropdown.Item>
                     )}
@@ -90,14 +91,20 @@ export default class AddStrat extends React.Component {
                 aria-label="Name"
                 aria-describedby="basic-addon1"
             />
+            <p>Description allow you to insert links! We encourage you do this to help people navigate. Here is the syntax:</p>
+            <ul>
+                <li dangerouslySetInnerHTML={{__html:"{link;<span style='color:blue'>[LINK URL]</span>;<span style='color:green'>[TEXT YOU DESIRE]</span>}"}}>
+                </li>
+                <li dangerouslySetInnerHTML={{__html:"{link;<span style='color:blue'>/strats/Cruise Boosting</span>;<span style='color:green'>Cruise Boosting</span>} => <a href='/strats/Cruise Boosting'>Cruise Boosting</a>"}}>
+                </li>
+            </ul>
             <FormControl
                 as="textarea"
+                rows="6"
                 style={{whiteSpaces:"pre-wrap"}}
                 onChange={e => this.setState({ description: e.target.value})}
                 value={this.state.description}
-                placeholder="Description"
-                aria-label="Name"
-                aria-describedby="basic-addon1"
+                placeholder="Type a description here. You cannot use < or >. Both of these characters are banned."
             />
             <br></br>
             <Button variant="success" block onClick={()=>this.addStrat()}>

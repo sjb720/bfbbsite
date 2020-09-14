@@ -6,6 +6,7 @@ import Area from '../components/Area.js'
 import BACKEND_URL from '../components/backendurl.js'
 import ScrollAnimation from 'react-animate-on-scroll';
 import InformationContainer from '../components/InformationContainer.js'
+import StratAccordian from '../components/StratAccordian.js'
 
 export default class Index extends React.Component {
 
@@ -52,21 +53,9 @@ export default class Index extends React.Component {
         <Container>
           <InformationContainer>
 
-            <Accordion>
+            <StratAccordian strats={this.state.strats}>
 
-              {this.state.strats.map(strat =>
-                <Card bg="dark">
-                  <Accordion.Toggle as={Card.Header} eventKey={strat.name} style={{ cursor: "pointer" }}>
-                    <span style={{ fontSize: 26 }}>{strat.name}</span>
-
-                    <Button variant="outline-primary" style={{ float: "right" }} onClick={() => window.open('/strats/' + strat.name, '_blank')}>See more</Button>
-                  </Accordion.Toggle>
-                  <Accordion.Collapse eventKey={strat.name}>
-                    <Card.Body>{strat.description}</Card.Body>
-                  </Accordion.Collapse>
-                </Card>
-              )}
-            </Accordion>
+            </StratAccordian>
           </InformationContainer>
 
         </Container>

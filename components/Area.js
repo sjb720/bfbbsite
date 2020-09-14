@@ -3,6 +3,7 @@ import fetch from 'node-fetch'
 import { DropdownButton, Dropdown, Button, Container, Image, Badge, Card, Accordion } from 'react-bootstrap'
 import BACKEND_URL from './backendurl.js'
 import ScrollAnimation from 'react-animate-on-scroll';
+import StratAccordian from './StratAccordian.js';
 
 export default class Area extends React.Component {
     constructor(props) {
@@ -41,20 +42,7 @@ export default class Area extends React.Component {
                 <span class="badge badge-primary" style={{ marginLeft: 10 }}>{this.props.area.sock_count} Socks</span>
                 <span class="badge badge-warning" style={{ marginLeft: 10 }}>{this.props.area.spatula_count} Spatulas</span>
             </h2>
-            <Accordion>
-                {this.state.strats.map(strat =>
-                    <Card bg="dark">
-                        <Accordion.Toggle as={Card.Header} eventKey={strat.name} style={{cursor:"pointer"}}>
-                            <span style={{fontSize:26}}>{strat.name}</span>
-                            
-                            <Button variant="outline-primary" style={{float:"right"}} onClick={()=>window.open('/strats/'+strat.name,'_blank')}>See more</Button>
-                        </Accordion.Toggle>
-                        <Accordion.Collapse eventKey={strat.name}>
-                            <Card.Body>{strat.description}</Card.Body>
-                        </Accordion.Collapse>
-                    </Card>
-                )}
-            </Accordion>
+            <StratAccordian strats={this.state.strats}></StratAccordian>
 
         </div>);
     }
