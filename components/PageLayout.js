@@ -48,7 +48,7 @@ export default class PageLayout extends React.Component {
 
             </NavDropdown>
             <Nav.Link href="/randomizer">Randomizer</Nav.Link>
-            <Nav.Link href="https://bobhub.net/blitz">Blitz</Nav.Link>
+            <Nav.Link href="https://blitz.bobhub.net">Blitz</Nav.Link>
             <Nav.Link href="/bingo">Bingo</Nav.Link>
             <Nav.Link href="/modding">Modding</Nav.Link>
             <Nav.Link href="/tas">TAS</Nav.Link>
