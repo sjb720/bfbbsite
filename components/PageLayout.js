@@ -1,7 +1,7 @@
 import { Navbar, Form, FormControl, Button, Dropdown, ButtonGroup, Image, Nav, NavDropdown } from 'react-bootstrap'
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter, SidebarContent } from 'react-pro-sidebar';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
-import { BiWorld, BiHomeAlt,BiWrench } from 'react-icons/bi'
+import { BiWorld, BiHomeAlt, BiWrench } from 'react-icons/bi'
 import BACKEND_URL from './backendurl.js'
 
 
@@ -37,12 +37,15 @@ export default class PageLayout extends React.Component {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <NavDropdown title="Speedrunning" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/levels">Levels</NavDropdown.Item>
-              <NavDropdown.Divider />
               <NavDropdown.Item href="https://www.speedrun.com/bfbb">Leaderboards</NavDropdown.Item>
-              <NavDropdown.Item href="/tutorials">Tutorials</NavDropdown.Item>
-
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/levels">Levels</NavDropdown.Item>
               <NavDropdown.Item href="/strats">Strats</NavDropdown.Item>
+              <NavDropdown.Item href="/routes">Routes</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="/routes">Tutorials</NavDropdown.Item>
+
+
             </NavDropdown>
             <Nav.Link href="/randomizer">Randomizer</Nav.Link>
             <Nav.Link href="https://bobhub.net/blitz">Blitz</Nav.Link>

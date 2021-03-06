@@ -16,7 +16,7 @@ export default class Index extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-
+      
     }
   }
 
@@ -45,7 +45,7 @@ export default class Index extends React.Component {
               <div style={{ position: "relative", width: "100%", paddingBottom: "56.25%" }}>
                 <iframe
                   id="tplayer"
-                  src="https://player.twitch.tv/?channel=bfbbcommunity&parent=bfbbsite.vercel.app&parent=localhost"
+                  src="https://player.twitch.tv/?channel=bfbbcommunity&parent=bobhub.net&parent=localhost"
                   style={{ border: 0, position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}>
                 </iframe>
 

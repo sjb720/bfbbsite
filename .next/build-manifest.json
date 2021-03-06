@@ -34,15 +34,15 @@
       "static/chunks/webpack.js",
       "static/chunks/pages/levels.js"
     ],
-    "/strats": [
+    "/routes": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/strats.js"
+      "static/chunks/pages/routes.js"
     ],
-    "/strats/[id]": [
+    "/routes/[id]": [
       "static/chunks/main.js",
       "static/chunks/webpack.js",
-      "static/chunks/pages/strats/[id].js"
+      "static/chunks/pages/routes/[id].js"
     ]
   },
   "ampFirstPages": []

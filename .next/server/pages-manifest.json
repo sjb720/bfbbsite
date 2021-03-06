@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/strats": "pages/strats.js",
-  "/strats/[id]": "pages/strats/[id].js",
   "/": "pages/index.js",
-  "/levels": "pages/levels.js"
+  "/routes/[id]": "pages/routes/[id].js",
+  "/levels": "pages/levels.js",
+  "/routes": "pages/routes.js"
 }

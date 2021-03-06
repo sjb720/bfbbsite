@@ -53,6 +53,7 @@ export default class Index extends React.Component {
         <Container>
           <InformationContainer>
 
+            <h1>All Strats</h1>
             <StratAccordian strats={this.state.strats}>
 
             </StratAccordian>
