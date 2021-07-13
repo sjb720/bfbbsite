@@ -110,7 +110,13 @@ export default class Index extends React.Component {
                       <Card.Body>
                         {method.description}
                         <br></br>
-                        {method.videos.map(video => <a href={video}>Video example</a>)}
+                        {method.videos.map(video => 
+                           <div style={{display:"inline-block",marginRight:10,marginLeft:10}}>
+                           <iframe width="320" height="180" style={{border:"none"}}
+                               src={"https://www.youtube.com/embed/" + (/[^/]*$/.exec(video)[0])}>
+                           </iframe>
+                       </div>
+                          )}
                       </Card.Body>
                     </Accordion.Collapse>
                   </Card>

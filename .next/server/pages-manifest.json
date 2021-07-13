@@ -2,8 +2,7 @@
   "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
+  "/levels/[id]": "pages/levels/[id].js",
   "/": "pages/index.js",
-  "/routes/[id]": "pages/routes/[id].js",
-  "/levels": "pages/levels.js",
-  "/routes": "pages/routes.js"
+  "/next/dist/pages/_error": "pages/next/dist/pages/_error.js"
 }
